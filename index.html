@@ -36,6 +36,9 @@
     .nav-logo img { height:42px; width:auto; filter:drop-shadow(0 2px 4px rgba(0,0,0,.1)); }
     .nav-name { font-size:16px; font-weight:800; color:var(--brown); font-family:'Noto Sans SC',sans-serif; line-height:1.25; }
     .nav-name small { display:block; font-size:12px; font-weight:500; color:var(--light); letter-spacing:.5px; }
+    .lang-btn { background:transparent; border:1.5px solid var(--border); border-radius:7px; padding:7px 16px; font-size:13px; font-weight:800; cursor:pointer; color:var(--dark); transition:all .2s; letter-spacing:.5px; font-family:'Nunito',sans-serif; }
+    .lang-btn:hover { background:var(--sand); border-color:var(--brown); }
+    .nav-right { display:flex; align-items:center; gap:12px; }
     .nav-wa { background:var(--red); color:white; border:none; border-radius:8px; padding:10px 20px; font-size:15px; font-weight:700; cursor:pointer; box-shadow:0 4px 14px rgba(200,16,46,.3); transition:all .2s; text-decoration:none; display:inline-block; font-family:'Noto Sans SC',sans-serif; }
     .nav-wa:hover { background:var(--red-d); transform:translateY(-1px); }
 
@@ -266,9 +269,12 @@
 <nav>
   <div class="nav-logo">
     <img src="logo.png" alt="弘文馆" />
-    <div class="nav-name">弘文馆教育中心<small>Setia Indah · After-School Care</small></div>
+    <div class="nav-name" data-i18n="nav-name">弘文馆教育中心<small>Setia Indah · After-School Care</small></div>
   </div>
-  <a href="https://wa.me/60166760079" class="nav-wa" target="_blank">WhatsApp 咨询</a>
+  <div class="nav-right">
+    <button class="lang-btn" id="lang-btn" onclick="toggleLang()">EN</button>
+    <a href="https://wa.me/60166760079" class="nav-wa" target="_blank" data-i18n="nav-wa">WhatsApp 咨询</a>
+  </div>
 </nav>
 
 <!-- HERO -->
@@ -276,17 +282,17 @@
   <div class="hero-bg"></div>
   <div class="hero-content">
     <div class="hero-label">Setia Indah · Johor Bahru</div>
-    <h1>让学习与成长，<br>悄悄<em>盛开</em>在孩子心田</h1>
-    <p>把成长的每一天，都托付给温柔的守护。弘文馆安亲班——专业师资、温暖关怀，让孩子在安全环境中快乐成长、全面发展。</p>
+    <h1 data-i18n="hero-h1">让学习与成长，<br>悄悄<em>盛开</em>在孩子心田</h1>
+    <p data-i18n="hero-p">把成长的每一天，都托付给温柔的守护。弘文馆安亲班——专业师资、温暖关怀，让孩子在安全环境中快乐成长、全面发展。</p>
     <div class="hero-btns">
-      <a href="#contact" class="btn-primary">立即预约参观</a>
-      <a href="#about" class="btn-ghost">了解弘文馆</a>
+      <a href="#contact" class="btn-primary" data-i18n="hero-btn1">立即预约参观</a>
+      <a href="#about" class="btn-ghost" data-i18n="hero-btn2">了解弘文馆</a>
     </div>
   </div>
   <div class="hero-stats">
-    <div class="hstat"><div class="hstat-n">10+</div><div class="hstat-l">位专业师资</div></div>
-    <div class="hstat"><div class="hstat-n">一至六年级</div><div class="hstat-l">全年级覆盖</div></div>
-    <div class="hstat"><div class="hstat-n">华英数国科</div><div class="hstat-l">五科全补</div></div>
+    <div class="hstat"><div class="hstat-n">10+</div><div class="hstat-l" data-i18n="hstat1-l">位专业师资</div></div>
+    <div class="hstat"><div class="hstat-n" data-i18n="hstat2-n">一至六年级</div><div class="hstat-l" data-i18n="hstat2-l">全年级覆盖</div></div>
+    <div class="hstat"><div class="hstat-n" data-i18n="hstat3-n">华英数国科</div><div class="hstat-l" data-i18n="hstat3-l">五科全补</div></div>
   </div>
 </section>
 
@@ -296,14 +302,14 @@
     <div class="about-grid">
       <div class="about-img">
         <img src="photo-reading.jpg" alt="家长孩子共读" />
-        <div class="about-img-cap">亲子共读 · 让阅读成为生命底色</div>
+        <div class="about-img-cap" data-i18n="about-cap">亲子共读 · 让阅读成为生命底色</div>
       </div>
       <div class="about-text">
         <span class="sec-label">About Us</span>
-        <h2 class="sec-title">让孩子安心成长的港湾</h2>
-        <p>我们为孩子打造安全、舒适和充满关爱的学习空间，让他们在温馨的氛围中放心成长，拥有归属感和幸福体验。老师与同伴之间彼此关怀，鼓励孩子表达感受和想法，让他们在支持与尊重中建立自信，快乐成长。</p>
-        <p>在弘文馆，我们注重孩子的全人发展，更关注学业与能力的培育。通过科学系统的课程安排与个别化辅导，学生不仅学习兴趣浓厚，学科成绩同样节节攀升。</p>
-        <div class="about-quote">每一分进步，都是师生共同努力的成果；每一项佳绩，都是孩子们信心与成长的见证。弘文馆，让成绩与成长同行，让未来更精彩！</div>
+        <h2 class="sec-title" data-i18n="about-h2">让孩子安心成长的港湾</h2>
+        <p data-i18n="about-p1">我们为孩子打造安全、舒适和充满关爱的学习空间，让他们在温馨的氛围中放心成长，拥有归属感和幸福体验。老师与同伴之间彼此关怀，鼓励孩子表达感受和想法，让他们在支持与尊重中建立自信，快乐成长。</p>
+        <p data-i18n="about-p2">在弘文馆，我们注重孩子的全人发展，更关注学业与能力的培育。通过科学系统的课程安排与个别化辅导，学生不仅学习兴趣浓厚，学科成绩同样节节攀升。</p>
+        <div class="about-quote" data-i18n="about-quote">每一分进步，都是师生共同努力的成果；每一项佳绩，都是孩子们信心与成长的见证。弘文馆，让成绩与成长同行，让未来更精彩！</div>
       </div>
     </div>
   </div>
@@ -313,32 +319,32 @@
 <section class="features" id="features">
   <div class="mxw center">
     <span class="sec-label">Our Program</span>
-    <h2 class="sec-title">在弘文馆，孩子的每一天</h2>
-    <p class="sec-sub">学习、成长、探索、生活——每个环节都经过用心设计。</p>
+    <h2 class="sec-title" data-i18n="feat-h2">在弘文馆，孩子的每一天</h2>
+    <p class="sec-sub" data-i18n="feat-sub">学习、成长、探索、生活——每个环节都经过用心设计。</p>
   </div>
   <div class="feat-grid mxw" style="margin-top:48px;">
     <div class="fc">
       <img class="fc-img" src="photo-teaching.jpg" alt="老师辅导" />
       <div class="fc-body">
-        <div class="fc-tag">功课辅导</div>
-        <h3>老师在旁，难题即时击破</h3>
-        <p>专职老师逐一辅导，把难题拆开讲，确保孩子当天功课完成、概念真正理解，家长下班无需操心。</p>
+        <div class="fc-tag" data-i18n="fc1-tag">功课辅导</div>
+        <h3 data-i18n="fc1-h3">老师在旁，难题即时击破</h3>
+        <p data-i18n="fc1-p">专职老师逐一辅导，把难题拆开讲，确保孩子当天功课完成、概念真正理解，家长下班无需操心。</p>
       </div>
     </div>
     <div class="fc">
       <img class="fc-img" src="photo-activity.jpg" alt="生活活动" />
       <div class="fc-body">
-        <div class="fc-tag">生活素养</div>
-        <h3>动手体验，培养生活能力</h3>
-        <p>每周精心设计生活活动，让孩子在动手中学习、在体验中成长，培养自理能力与团队合作精神。</p>
+        <div class="fc-tag" data-i18n="fc2-tag">生活素养</div>
+        <h3 data-i18n="fc2-h3">动手体验，培养生活能力</h3>
+        <p data-i18n="fc2-p">每周精心设计生活活动，让孩子在动手中学习、在体验中成长，培养自理能力与团队合作精神。</p>
       </div>
     </div>
     <div class="fc">
       <img class="fc-img" src="photo-nature.jpg" alt="自然探索" />
       <div class="fc-body">
-        <div class="fc-tag">跨学科探索</div>
-        <h3>走出课本，探索真实世界</h3>
-        <p>老师带领孩子观察自然、动手实验，将学科知识融入真实体验，让好奇心成为最好的学习动力。</p>
+        <div class="fc-tag" data-i18n="fc3-tag">跨学科探索</div>
+        <h3 data-i18n="fc3-h3">走出课本，探索真实世界</h3>
+        <p data-i18n="fc3-p">老师带领孩子观察自然、动手实验，将学科知识融入真实体验，让好奇心成为最好的学习动力。</p>
       </div>
     </div>
   </div>
@@ -348,10 +354,10 @@
 <div class="artwall">
   <div class="artwall-bg"></div>
   <div class="artwall-content">
-    <span class="sec-label">孩子这样说</span>
-    <h2>没错，<br>我也很喜欢这里</h2>
-    <p>弘文馆不只是安亲班，更是孩子每天期待来到的地方。在这里，每个孩子都能用自己的方式闪闪发光。</p>
-    <p style="font-size:13px; color:rgba(255,255,255,.55); margin-top:4px;">小时候敢于追风，长大后敢于追梦。</p>
+    <span class="sec-label" data-i18n="artwall-label">孩子这样说</span>
+    <h2 data-i18n="artwall-h2">没错，<br>我也很喜欢这里</h2>
+    <p data-i18n="artwall-p1">弘文馆不只是安亲班，更是孩子每天期待来到的地方。在这里，每个孩子都能用自己的方式闪闪发光。</p>
+    <p style="font-size:13px; color:rgba(255,255,255,.55); margin-top:4px;" data-i18n="artwall-p2">小时候敢于追风，长大后敢于追梦。</p>
   </div>
 </div>
 
@@ -359,23 +365,23 @@
 <section class="phi">
   <div class="mxw center">
     <span class="sec-label" style="background:rgba(200,16,46,.3); color:#FCA5A5;">Our Approach</span>
-    <h2 class="sec-title" style="color:white;">我们的专业</h2>
+    <h2 class="sec-title" style="color:white;" data-i18n="phi-h2">我们的专业</h2>
   </div>
   <div class="phi-grid mxw">
     <div class="phi-item">
       <div class="phi-num">01</div>
-      <h3>以孩子为中心</h3>
-      <p>每一个孩子都是独一无二的个体。我们细看每位学生的盲点与节奏，因材施教，让孩子在被看见中建立自信。</p>
+      <h3 data-i18n="phi1-h3">以孩子为中心</h3>
+      <p data-i18n="phi1-p">每一个孩子都是独一无二的个体。我们细看每位学生的盲点与节奏，因材施教，让孩子在被看见中建立自信。</p>
     </div>
     <div class="phi-item">
       <div class="phi-num">02</div>
-      <h3>以素养能力为导向</h3>
-      <p>成绩只是起点，真正的目标是让孩子学会思考、学会学习。贴近 UPSA 与 UASA 框架，锻炼高阶思维，赢在未来。</p>
+      <h3 data-i18n="phi2-h3">以素养能力为导向</h3>
+      <p data-i18n="phi2-p">成绩只是起点，真正的目标是让孩子学会思考、学会学习。贴近 UPSA 与 UASA 框架，锻炼高阶思维，赢在未来。</p>
     </div>
     <div class="phi-item">
       <div class="phi-num">03</div>
-      <h3>以专业教学为根本</h3>
-      <p>名师把关，课程严谨，方法实证有效。我们不做花招，只专注于让孩子真正理解、真正进步、真正爱上学习。</p>
+      <h3 data-i18n="phi3-h3">以专业教学为根本</h3>
+      <p data-i18n="phi3-p">名师把关，课程严谨，方法实证有效。我们不做花招，只专注于让孩子真正理解、真正进步、真正爱上学习。</p>
     </div>
   </div>
 </section>
@@ -384,21 +390,21 @@
 <section class="environment">
   <div class="mxw center">
     <span class="sec-label">Our Space</span>
-    <h2 class="sec-title">精心打造的学习环境</h2>
-    <p class="sec-sub">安全、舒适、充满美感，让孩子每天都期待到来。</p>
+    <h2 class="sec-title" data-i18n="env-h2">精心打造的学习环境</h2>
+    <p class="sec-sub" data-i18n="env-sub">安全、舒适、充满美感，让孩子每天都期待到来。</p>
   </div>
   <div class="env-grid mxw">
     <div>
       <div class="env-img"><img src="photo-env1.jpg" alt="弘文馆接待区" /></div>
-      <div class="env-caption">温馨接待区</div>
+      <div class="env-caption" data-i18n="env-cap1">温馨接待区</div>
     </div>
     <div>
       <div class="env-img"><img src="photo-env2.jpg" alt="阅读阶梯区" /></div>
-      <div class="env-caption">阅读阶梯区</div>
+      <div class="env-caption" data-i18n="env-cap2">阅读阶梯区</div>
     </div>
     <div>
       <div class="env-img"><img src="photo-env3.jpg" alt="多功能学习室" /></div>
-      <div class="env-caption">多功能学习室</div>
+      <div class="env-caption" data-i18n="env-cap3">多功能学习室</div>
     </div>
   </div>
 </section>
@@ -412,22 +418,22 @@
       </div>
       <div>
         <span class="sec-label">Our Teachers</span>
-        <h2 class="sec-title">专业优秀师资</h2>
-        <p style="font-size:15px; color:var(--mid); font-family:'Noto Sans SC',sans-serif; line-height:1.85; margin-bottom:14px;">在学生最核心的学习上，提高成绩，我们是专业的。我们不做花招，只盯住最关键的三件事：概念要懂、方法要会、练习要对。</p>
-        <p style="font-size:15px; color:var(--mid); font-family:'Noto Sans SC',sans-serif; line-height:1.85;">老师在旁边细看学生的盲点，把难题拆开讲，把策略练到熟，让孩子的成绩真正往上走。</p>
+        <h2 class="sec-title" data-i18n="teachers-h2">专业优秀师资</h2>
+        <p style="font-size:15px; color:var(--mid); font-family:'Noto Sans SC',sans-serif; line-height:1.85; margin-bottom:14px;" data-i18n="teachers-p1">在学生最核心的学习上，提高成绩，我们是专业的。我们不做花招，只盯住最关键的三件事：概念要懂、方法要会、练习要对。</p>
+        <p style="font-size:15px; color:var(--mid); font-family:'Noto Sans SC',sans-serif; line-height:1.85;" data-i18n="teachers-p2">老师在旁边细看学生的盲点，把难题拆开讲，把策略练到熟，让孩子的成绩真正往上走。</p>
       </div>
     </div>
     <div class="teacher-grid">
-      <div class="tc"><h4>姚媚馨老师</h4><div class="qual">新山依不拉欣师范学院<br>现任本地华小教师</div><span class="exp">20年教学经验</span></div>
-      <div class="tc"><h4>洪慧芝老师</h4><div class="qual">世纪大学幼教DECE文凭<br>蒙特梭利MCI证书</div><span class="exp">20年幼教 · 5年咨商</span></div>
-      <div class="tc"><h4>魏薇老师</h4><div class="qual">中国教育体系<br>吉隆坡补教多年</div><span class="exp">资深华文教师</span></div>
-      <div class="tc"><h4>林位耀老师</h4><div class="qual">南方大学学院 国文系<br>曾任宽柔中学国文老师</div><span class="exp">丰富国文教学</span></div>
-      <div class="tc"><h4>吴俐敏老师</h4><div class="qual">台湾辅仁大学应用美术<br>传统文化儿童营队策划人</div><span class="exp">幼教12年经验</span></div>
-      <div class="tc"><h4>周禧慧老师</h4><div class="qual">台湾台中教育大学<br>幼儿教育硕士</div><span class="exp">华语家教 · 生命教育</span></div>
-      <div class="tc"><h4>刘慧玲老师</h4><div class="qual">新加坡南洋理工大学<br>机械工程博</div><span class="exp">英文 · 科学 · 数学</span></div>
-      <div class="tc"><h4>林丽丹老师</h4><div class="qual">澳洲坎贝拉大学商学系<br>弘文馆资深华文教师</div><span class="exp">资深华文</span></div>
-      <div class="tc"><h4>陈彦丰老师</h4><div class="qual">多媒体大学学士<br>萨提尔家族治疗辅导文凭</div><span class="exp">阅读理解营讲师</span></div>
-      <div class="tc"><h4>尤丽涓老师</h4><div class="qual">马大中文系学士<br>数学作业簿出题编辑</div><span class="exp">华文 · 数学专科</span></div>
+      <div class="tc"><h4>姚媚馨老师</h4><div class="qual" data-i18n="t1-qual">新山依不拉欣师范学院<br>现任本地华小教师</div><span class="exp" data-i18n="t1-exp">20年教学经验</span></div>
+      <div class="tc"><h4>洪慧芝老师</h4><div class="qual" data-i18n="t2-qual">世纪大学幼教DECE文凭<br>蒙特梭利MCI证书</div><span class="exp" data-i18n="t2-exp">20年幼教 · 5年咨商</span></div>
+      <div class="tc"><h4>魏薇老师</h4><div class="qual" data-i18n="t3-qual">中国教育体系<br>吉隆坡补教多年</div><span class="exp" data-i18n="t3-exp">资深华文教师</span></div>
+      <div class="tc"><h4>林位耀老师</h4><div class="qual" data-i18n="t4-qual">南方大学学院 国文系<br>曾任宽柔中学国文老师</div><span class="exp" data-i18n="t4-exp">丰富国文教学</span></div>
+      <div class="tc"><h4>吴俐敏老师</h4><div class="qual" data-i18n="t5-qual">台湾辅仁大学应用美术<br>传统文化儿童营队策划人</div><span class="exp" data-i18n="t5-exp">幼教12年经验</span></div>
+      <div class="tc"><h4>周禧慧老师</h4><div class="qual" data-i18n="t6-qual">台湾台中教育大学<br>幼儿教育硕士</div><span class="exp" data-i18n="t6-exp">华语家教 · 生命教育</span></div>
+      <div class="tc"><h4>刘慧玲老师</h4><div class="qual" data-i18n="t7-qual">新加坡南洋理工大学<br>机械工程博</div><span class="exp" data-i18n="t7-exp">英文 · 科学 · 数学</span></div>
+      <div class="tc"><h4>林丽丹老师</h4><div class="qual" data-i18n="t8-qual">澳洲坎贝拉大学商学系<br>弘文馆资深华文教师</div><span class="exp" data-i18n="t8-exp">资深华文</span></div>
+      <div class="tc"><h4>陈彦丰老师</h4><div class="qual" data-i18n="t9-qual">多媒体大学学士<br>萨提尔家族治疗辅导文凭</div><span class="exp" data-i18n="t9-exp">阅读理解营讲师</span></div>
+      <div class="tc"><h4>尤丽涓老师</h4><div class="qual" data-i18n="t10-qual">马大中文系学士<br>数学作业簿出题编辑</div><span class="exp" data-i18n="t10-exp">华文 · 数学专科</span></div>
     </div>
   </div>
 </section>
@@ -436,8 +442,8 @@
 <section class="curriculum">
   <div class="mxw center">
     <span class="sec-label">Curriculum</span>
-    <h2 class="sec-title">五科全覆盖，<br>贴近华小课纲</h2>
-    <p class="sec-sub">依据马来西亚华小 KSSR 课程纲要，五科同步强化，<br>不只应付考试，更培养孩子真正的思维能力。</p>
+    <h2 class="sec-title" data-i18n="curr-h2">五科全覆盖，<br>贴近华小课纲</h2>
+    <p class="sec-sub" data-i18n="curr-sub">依据马来西亚华小 KSSR 课程纲要，五科同步强化，<br>不只应付考试，更培养孩子真正的思维能力。</p>
   </div>
 
   <!-- 五科卡片 -->
@@ -445,82 +451,82 @@
     <div class="subj-grid">
       <div class="subj-card">
         <div class="subj-icon" style="background:linear-gradient(135deg,#EF4444,#DC2626);">华</div>
-        <h4>华文</h4>
-        <p>阅读理解<br>作文写作<br>词语造句<br>书写美化</p>
-        <span class="subj-hots">HOTS 高阶思维</span>
+        <h4 data-i18n="subj1-h4">华文</h4>
+        <p data-i18n="subj1-p">阅读理解<br>作文写作<br>词语造句<br>书写美化</p>
+        <span class="subj-hots" data-i18n="subj-hots">HOTS 高阶思维</span>
       </div>
       <div class="subj-card">
         <div class="subj-icon" style="background:linear-gradient(135deg,#3B82F6,#2563EB);">英</div>
-        <h4>英文</h4>
-        <p>Reading Comp<br>Creative Writing<br>Grammar & Vocab<br>Oral Expression</p>
-        <span class="subj-hots">HOTS 高阶思维</span>
+        <h4 data-i18n="subj2-h4">英文</h4>
+        <p data-i18n="subj2-p">Reading Comp<br>Creative Writing<br>Grammar & Vocab<br>Oral Expression</p>
+        <span class="subj-hots" data-i18n="subj-hots">HOTS 高阶思维</span>
       </div>
       <div class="subj-card">
         <div class="subj-icon" style="background:linear-gradient(135deg,#F59E0B,#D97706);">数</div>
-        <h4>数学</h4>
-        <p>四则运算<br>应用题解析<br>逻辑推理<br>数据分析</p>
-        <span class="subj-hots">HOTS 高阶思维</span>
+        <h4 data-i18n="subj3-h4">数学</h4>
+        <p data-i18n="subj3-p">四则运算<br>应用题解析<br>逻辑推理<br>数据分析</p>
+        <span class="subj-hots" data-i18n="subj-hots">HOTS 高阶思维</span>
       </div>
       <div class="subj-card">
         <div class="subj-icon" style="background:linear-gradient(135deg,#10B981,#059669);">国</div>
-        <h4>国文</h4>
-        <p>阅读理解<br>写作表达<br>语法运用<br>口语表达</p>
-        <span class="subj-hots">HOTS 高阶思维</span>
+        <h4 data-i18n="subj4-h4">国文</h4>
+        <p data-i18n="subj4-p">阅读理解<br>写作表达<br>语法运用<br>口语表达</p>
+        <span class="subj-hots" data-i18n="subj-hots">HOTS 高阶思维</span>
       </div>
       <div class="subj-card">
         <div class="subj-icon" style="background:linear-gradient(135deg,#8B5CF6,#7C3AED);">科</div>
-        <h4>科学</h4>
-        <p>科学概念<br>观察与探究<br>实验分析<br>批判思考</p>
-        <span class="subj-hots">HOTS 高阶思维</span>
+        <h4 data-i18n="subj5-h4">科学</h4>
+        <p data-i18n="subj5-p">科学概念<br>观察与探究<br>实验分析<br>批判思考</p>
+        <span class="subj-hots" data-i18n="subj-hots">HOTS 高阶思维</span>
       </div>
     </div>
 
     <!-- 年级进阶条 -->
     <div class="prog-wrap">
-      <p class="prog-label">年级进阶路线图</p>
+      <p class="prog-label" data-i18n="prog-label">年级进阶路线图</p>
       <div class="prog-track">
         <div class="prog-step">
           <div class="prog-dot normal"><span>Tahun</span><strong>1</strong></div>
           <div class="prog-info">
-            <h5>启蒙奠基</h5>
-            <p>建立学习习惯<br>五科基础入门<br>培养阅读兴趣</p>
+            <h5 data-i18n="prog1-h5">启蒙奠基</h5>
+            <p data-i18n="prog1-p">建立学习习惯<br>五科基础入门<br>培养阅读兴趣</p>
           </div>
         </div>
         <div class="prog-step">
           <div class="prog-dot normal"><span>Tahun</span><strong>2</strong></div>
           <div class="prog-info">
-            <h5>稳固根基</h5>
-            <p>词汇与运算强化<br>写作句子训练<br>理解能力提升</p>
+            <h5 data-i18n="prog2-h5">稳固根基</h5>
+            <p data-i18n="prog2-p">词汇与运算强化<br>写作句子训练<br>理解能力提升</p>
           </div>
         </div>
         <div class="prog-step">
           <div class="prog-dot normal"><span>Tahun</span><strong>3</strong></div>
           <div class="prog-info">
-            <h5>能力拓展</h5>
-            <p>段落写作训练<br>应用题思路<br>科学探究入门</p>
+            <h5 data-i18n="prog3-h5">能力拓展</h5>
+            <p data-i18n="prog3-p">段落写作训练<br>应用题思路<br>科学探究入门</p>
           </div>
         </div>
         <div class="prog-step">
           <div class="prog-dot upsa"><span>Tahun</span><strong>4</strong></div>
           <div class="prog-info">
-            <h5>UPSA 备战</h5>
-            <p>系统复习五科<br>高阶题型专攻<br>考试技巧训练</p>
-            <span class="prog-badge b-upsa">UPSA 关键年</span>
+            <h5 data-i18n="prog4-h5">UPSA 备战</h5>
+            <p data-i18n="prog4-p">系统复习五科<br>高阶题型专攻<br>考试技巧训练</p>
+            <span class="prog-badge b-upsa" data-i18n="prog4-badge">UPSA 关键年</span>
           </div>
         </div>
         <div class="prog-step">
           <div class="prog-dot normal"><span>Tahun</span><strong>5</strong></div>
           <div class="prog-info">
-            <h5>深化冲刺</h5>
-            <p>HOTS 题型强化<br>写作深度提升<br>跨科综合思维</p>
+            <h5 data-i18n="prog5-h5">深化冲刺</h5>
+            <p data-i18n="prog5-p">HOTS 题型强化<br>写作深度提升<br>跨科综合思维</p>
           </div>
         </div>
         <div class="prog-step">
           <div class="prog-dot uasa"><span>Tahun</span><strong>6</strong></div>
           <div class="prog-info">
-            <h5>UASA 总冲刺</h5>
-            <p>全科总复习<br>模拟考试演练<br>自信迎战升中</p>
-            <span class="prog-badge b-uasa">UASA 毕业关</span>
+            <h5 data-i18n="prog6-h5">UASA 总冲刺</h5>
+            <p data-i18n="prog6-p">全科总复习<br>模拟考试演练<br>自信迎战升中</p>
+            <span class="prog-badge b-uasa" data-i18n="prog6-badge">UASA 毕业关</span>
           </div>
         </div>
       </div>
@@ -528,7 +534,7 @@
 
     <!-- HOTS 标语条 -->
     <div class="hots-strip">
-      <h3>我们锻炼的思维能力</h3>
+      <h3 data-i18n="hots-h3">我们锻炼的思维能力</h3>
       <div class="hots-tags">
         <span class="hots-tag">分析 Analysing</span>
         <span class="hots-tag">评估 Evaluating</span>
@@ -546,8 +552,8 @@
 <section class="other-courses">
   <div class="mxw center">
     <span class="sec-label">More Programmes</span>
-    <h2 class="sec-title">更多课程，<br>一站式学习中心</h2>
-    <p class="sec-sub">除了安亲补习，我们还提供专业课程，<br>从小学到中学，全程陪伴孩子成长。</p>
+    <h2 class="sec-title" data-i18n="oc-h2">更多课程，<br>一站式学习中心</h2>
+    <p class="sec-sub" data-i18n="oc-sub">除了安亲补习，我们还提供专业课程，<br>从小学到中学，全程陪伴孩子成长。</p>
   </div>
   <div class="mxw">
     <div class="oc-grid">
@@ -633,13 +639,13 @@
 <section class="schedule" id="schedule">
   <div class="mxw center">
     <span class="sec-label">Daily Schedule</span>
-    <h2 class="sec-title">安亲班时间表</h2>
-    <p class="sec-sub">早上班与下午班皆有，配合孩子的上课时段灵活安排。</p>
+    <h2 class="sec-title" data-i18n="sch-h2">安亲班时间表</h2>
+    <p class="sec-sub" data-i18n="sch-sub">早上班与下午班皆有，配合孩子的上课时段灵活安排。</p>
   </div>
   <div class="mxw" style="margin-top:40px;">
     <div class="sch-tabs">
-      <button class="sch-tab active" onclick="showTab(event,'am')">早上班（配合下午班学校）</button>
-      <button class="sch-tab" onclick="showTab(event,'pm')">下午班（配合早上班学校）</button>
+      <button class="sch-tab active" onclick="showTab(event,'am')" data-i18n="tab-am">早上班（配合下午班学校）</button>
+      <button class="sch-tab" onclick="showTab(event,'pm')" data-i18n="tab-pm">下午班（配合早上班学校）</button>
     </div>
     <div class="sch-panel active" id="tab-am">
       <table class="sch-table">
@@ -666,7 +672,7 @@
         </tbody>
       </table>
     </div>
-    <p style="font-size:14px; color:var(--light); margin-top:14px; font-family:'Noto Sans SC',sans-serif;">* 时间表只供参考，每个年级会因不同的课程安排而有所不同。</p>
+    <p style="font-size:14px; color:var(--light); margin-top:14px; font-family:'Noto Sans SC',sans-serif;" data-i18n="sch-note">* 时间表只供参考，每个年级会因不同的课程安排而有所不同。</p>
   </div>
 </section>
 
@@ -677,14 +683,14 @@
       <div class="meal-img"><img src="photo-meal.jpg" alt="营养午餐" /></div>
       <div class="meal-text">
         <span class="sec-label">Nutrition</span>
-        <h2 class="sec-title">营养均衡，<br>助力孩子活力成长</h2>
-        <p>我们非常重视孩子的营养均衡，为他们精心准备多样化、营养丰富的健康餐点。通过引导孩子养成良好的饮食习惯，增强体质，增进专注力与学习动力。</p>
+        <h2 class="sec-title" data-i18n="meal-h2">营养均衡，<br>助力孩子活力成长</h2>
+        <p data-i18n="meal-p">我们非常重视孩子的营养均衡，为他们精心准备多样化、营养丰富的健康餐点。通过引导孩子养成良好的饮食习惯，增强体质，增进专注力与学习动力。</p>
         <div class="meal-chips">
-          <div class="meal-chip">一饭</div>
-          <div class="meal-chip">一肉</div>
-          <div class="meal-chip">一菜</div>
-          <div class="meal-chip">一汤</div>
-          <div class="meal-chip">一水果</div>
+          <div class="meal-chip" data-i18n="meal-c1">一饭</div>
+          <div class="meal-chip" data-i18n="meal-c2">一肉</div>
+          <div class="meal-chip" data-i18n="meal-c3">一菜</div>
+          <div class="meal-chip" data-i18n="meal-c4">一汤</div>
+          <div class="meal-chip" data-i18n="meal-c5">一水果</div>
         </div>
       </div>
     </div>
@@ -694,11 +700,11 @@
 <!-- CTA -->
 <section class="cta">
   <div class="mxw">
-    <h2>名额有限，现在联系我们</h2>
-    <p>欢迎预约参观，亲身感受弘文馆的温暖氛围。</p>
+    <h2 data-i18n="cta-h2">名额有限，现在联系我们</h2>
+    <p data-i18n="cta-p">欢迎预约参观，亲身感受弘文馆的温暖氛围。</p>
     <div class="cta-btns">
       <a href="https://wa.me/60166760079" class="btn-white" target="_blank">WhatsApp 016-676 0079</a>
-      <a href="#contact" class="btn-dark">填写报名表</a>
+      <a href="#contact" class="btn-dark" data-i18n="cta-btn2">填写报名表</a>
     </div>
   </div>
 </section>
@@ -707,47 +713,213 @@
 <section class="contact" id="contact">
   <div class="contact-grid mxw">
     <div>
-      <h2>联系我们</h2>
-      <p class="csub">欢迎预约参观，亲身感受弘文馆的温暖氛围。</p>
-      <div class="ci"><div class="ci-dot"></div><div><h5>地址</h5><p>23-01, Jln Setia 3/13, Taman Setia Indah,<br>81100 Johor Bahru, Johor</p></div></div>
+      <h2 data-i18n="contact-h2">联系我们</h2>
+      <p class="csub" data-i18n="contact-sub">欢迎预约参观，亲身感受弘文馆的温暖氛围。</p>
+      <div class="ci"><div class="ci-dot"></div><div><h5 data-i18n="addr-label">地址</h5><p>23-01, Jln Setia 3/13, Taman Setia Indah,<br>81100 Johor Bahru, Johor</p></div></div>
       <div style="margin:0 0 20px; border-radius:12px; overflow:hidden;">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.3085501000764!2d103.75870090000001!3d1.5762684999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da6f003d7e24f9%3A0x67f1e900ce91832c!2z5byY5paH6aaG5YWo5Lq65pWZ6IKy5Lit5b-D!5e0!3m2!1szh-CN!2smy!4v1777562819052!5m2!1szh-CN!2smy" width="100%" height="220" style="border:0; display:block;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
-      <div class="ci"><div class="ci-dot"></div><div><h5>电话 / WhatsApp</h5><p>016-676 0079</p></div></div>
-      <div class="ci"><div class="ci-dot"></div><div><h5>开放时间</h5><p>早上班：8:00am – 11:00am<br>下午班：1:00pm – 6:30pm<br>星期一至五（学校上课日）</p></div></div>
+      <div class="ci"><div class="ci-dot"></div><div><h5 data-i18n="phone-label">电话 / WhatsApp</h5><p>016-676 0079</p></div></div>
+      <div class="ci"><div class="ci-dot"></div><div><h5 data-i18n="hours-label">开放时间</h5><p data-i18n="hours-text">早上班：8:00am – 11:00am<br>下午班：1:00pm – 6:30pm<br>星期一至五（学校上课日）</p></div></div>
     </div>
     <form class="cf" onsubmit="handleSubmit(event)">
       <div class="fr">
-        <div class="fg"><label>家长姓名</label><input type="text" placeholder="您的姓名" required /></div>
-        <div class="fg"><label>联系号码</label><input type="tel" placeholder="016-XXXXXXX" required /></div>
+        <div class="fg"><label data-i18n="form-name-label">家长姓名</label><input type="text" placeholder="您的姓名" data-i18n-ph="form-name-ph" required /></div>
+        <div class="fg"><label data-i18n="form-phone-label">联系号码</label><input type="tel" placeholder="016-XXXXXXX" required /></div>
       </div>
-      <div class="fg"><label>孩子就读年级</label>
+      <div class="fg"><label data-i18n="form-grade-label">孩子就读年级</label>
         <select required>
-          <option value="" disabled selected>请选择年级</option>
+          <option value="" disabled selected data-i18n="form-grade-ph">请选择年级</option>
           <option>一年级 / Tahun 1</option><option>二年级 / Tahun 2</option>
           <option>三年级 / Tahun 3</option><option>四年级 / Tahun 4</option>
           <option>五年级 / Tahun 5</option><option>六年级 / Tahun 6</option>
         </select>
       </div>
-      <div class="fg"><label>上课时段</label>
+      <div class="fg"><label data-i18n="form-session-label">上课时段</label>
         <select>
-          <option>早上班（配合下午班学校）</option>
-          <option>下午班（配合早上班学校）</option>
-          <option>待确认</option>
+          <option data-i18n="session-am">早上班（配合下午班学校）</option>
+          <option data-i18n="session-pm">下午班（配合早上班学校）</option>
+          <option data-i18n="session-tbc">待确认</option>
         </select>
       </div>
-      <div class="fg"><label>留言</label><textarea placeholder="如有疑问，欢迎留言…"></textarea></div>
-      <button type="submit" class="sbtn">提交报名 / Submit Enquiry</button>
+      <div class="fg"><label data-i18n="form-msg-label">留言</label><textarea placeholder="如有疑问，欢迎留言…" data-i18n-ph="form-msg-ph"></textarea></div>
+      <button type="submit" class="sbtn" data-i18n="form-submit">提交报名 / Submit Enquiry</button>
     </form>
   </div>
 </section>
 
 <footer>
   <p>© 2025 <span>弘文馆教育中心</span> · Setia Indah, Johor Bahru · All Rights Reserved</p>
-  <p style="margin-top:6px;">把成长的每一天，都托付给温柔的守护</p>
+  <p style="margin-top:6px;" data-i18n="footer-tagline">把成长的每一天，都托付给温柔的守护</p>
 </footer>
 
 <script>
+  /* ========== BILINGUAL TRANSLATIONS ========== */
+  const T = {
+    zh: {
+      'nav-name': '弘文馆教育中心<small>Setia Indah · After-School Care</small>',
+      'nav-wa': 'WhatsApp 咨询',
+      'hero-h1': '让学习与成长，<br>悄悄<em>盛开</em>在孩子心田',
+      'hero-p': '把成长的每一天，都托付给温柔的守护。弘文馆安亲班——专业师资、温暖关怀，让孩子在安全环境中快乐成长、全面发展。',
+      'hero-btn1': '立即预约参观', 'hero-btn2': '了解弘文馆',
+      'hstat1-l': '位专业师资', 'hstat2-n': '一至六年级', 'hstat2-l': '全年级覆盖', 'hstat3-n': '华英数国科', 'hstat3-l': '五科全补',
+      'about-cap': '亲子共读 · 让阅读成为生命底色',
+      'about-h2': '让孩子安心成长的港湾',
+      'about-p1': '我们为孩子打造安全、舒适和充满关爱的学习空间，让他们在温馨的氛围中放心成长，拥有归属感和幸福体验。老师与同伴之间彼此关怀，鼓励孩子表达感受和想法，让他们在支持与尊重中建立自信，快乐成长。',
+      'about-p2': '在弘文馆，我们注重孩子的全人发展，更关注学业与能力的培育。通过科学系统的课程安排与个别化辅导，学生不仅学习兴趣浓厚，学科成绩同样节节攀升。',
+      'about-quote': '每一分进步，都是师生共同努力的成果；每一项佳绩，都是孩子们信心与成长的见证。弘文馆，让成绩与成长同行，让未来更精彩！',
+      'feat-h2': '在弘文馆，孩子的每一天', 'feat-sub': '学习、成长、探索、生活——每个环节都经过用心设计。',
+      'fc1-tag': '功课辅导', 'fc1-h3': '老师在旁，难题即时击破', 'fc1-p': '专职老师逐一辅导，把难题拆开讲，确保孩子当天功课完成、概念真正理解，家长下班无需操心。',
+      'fc2-tag': '生活素养', 'fc2-h3': '动手体验，培养生活能力', 'fc2-p': '每周精心设计生活活动，让孩子在动手中学习、在体验中成长，培养自理能力与团队合作精神。',
+      'fc3-tag': '跨学科探索', 'fc3-h3': '走出课本，探索真实世界', 'fc3-p': '老师带领孩子观察自然、动手实验，将学科知识融入真实体验，让好奇心成为最好的学习动力。',
+      'artwall-label': '孩子这样说', 'artwall-h2': '没错，<br>我也很喜欢这里',
+      'artwall-p1': '弘文馆不只是安亲班，更是孩子每天期待来到的地方。在这里，每个孩子都能用自己的方式闪闪发光。',
+      'artwall-p2': '小时候敢于追风，长大后敢于追梦。',
+      'phi-h2': '我们的专业',
+      'phi1-h3': '以孩子为中心', 'phi1-p': '每一个孩子都是独一无二的个体。我们细看每位学生的盲点与节奏，因材施教，让孩子在被看见中建立自信。',
+      'phi2-h3': '以素养能力为导向', 'phi2-p': '成绩只是起点，真正的目标是让孩子学会思考、学会学习。贴近 UPSA 与 UASA 框架，锻炼高阶思维，赢在未来。',
+      'phi3-h3': '以专业教学为根本', 'phi3-p': '名师把关，课程严谨，方法实证有效。我们不做花招，只专注于让孩子真正理解、真正进步、真正爱上学习。',
+      'env-h2': '精心打造的学习环境', 'env-sub': '安全、舒适、充满美感，让孩子每天都期待到来。',
+      'env-cap1': '温馨接待区', 'env-cap2': '阅读阶梯区', 'env-cap3': '多功能学习室',
+      'teachers-h2': '专业优秀师资',
+      'teachers-p1': '在学生最核心的学习上，提高成绩，我们是专业的。我们不做花招，只盯住最关键的三件事：概念要懂、方法要会、练习要对。',
+      'teachers-p2': '老师在旁边细看学生的盲点，把难题拆开讲，把策略练到熟，让孩子的成绩真正往上走。',
+      't1-qual': '新山依不拉欣师范学院<br>现任本地华小教师', 't1-exp': '20年教学经验',
+      't2-qual': '世纪大学幼教DECE文凭<br>蒙特梭利MCI证书', 't2-exp': '20年幼教 · 5年咨商',
+      't3-qual': '中国教育体系<br>吉隆坡补教多年', 't3-exp': '资深华文教师',
+      't4-qual': '南方大学学院 国文系<br>曾任宽柔中学国文老师', 't4-exp': '丰富国文教学',
+      't5-qual': '台湾辅仁大学应用美术<br>传统文化儿童营队策划人', 't5-exp': '幼教12年经验',
+      't6-qual': '台湾台中教育大学<br>幼儿教育硕士', 't6-exp': '华语家教 · 生命教育',
+      't7-qual': '新加坡南洋理工大学<br>机械工程博', 't7-exp': '英文 · 科学 · 数学',
+      't8-qual': '澳洲坎贝拉大学商学系<br>弘文馆资深华文教师', 't8-exp': '资深华文',
+      't9-qual': '多媒体大学学士<br>萨提尔家族治疗辅导文凭', 't9-exp': '阅读理解营讲师',
+      't10-qual': '马大中文系学士<br>数学作业簿出题编辑', 't10-exp': '华文 · 数学专科',
+      'curr-h2': '五科全覆盖，<br>贴近华小课纲', 'curr-sub': '依据马来西亚华小 KSSR 课程纲要，五科同步强化，<br>不只应付考试，更培养孩子真正的思维能力。',
+      'subj1-h4': '华文', 'subj1-p': '阅读理解<br>作文写作<br>词语造句<br>书写美化',
+      'subj2-h4': '英文', 'subj2-p': 'Reading Comp<br>Creative Writing<br>Grammar & Vocab<br>Oral Expression',
+      'subj3-h4': '数学', 'subj3-p': '四则运算<br>应用题解析<br>逻辑推理<br>数据分析',
+      'subj4-h4': '国文', 'subj4-p': '阅读理解<br>写作表达<br>语法运用<br>口语表达',
+      'subj5-h4': '科学', 'subj5-p': '科学概念<br>观察与探究<br>实验分析<br>批判思考',
+      'subj-hots': 'HOTS 高阶思维',
+      'prog-label': '年级进阶路线图',
+      'prog1-h5': '启蒙奠基', 'prog1-p': '建立学习习惯<br>五科基础入门<br>培养阅读兴趣',
+      'prog2-h5': '稳固根基', 'prog2-p': '词汇与运算强化<br>写作句子训练<br>理解能力提升',
+      'prog3-h5': '能力拓展', 'prog3-p': '段落写作训练<br>应用题思路<br>科学探究入门',
+      'prog4-h5': 'UPSA 备战', 'prog4-p': '系统复习五科<br>高阶题型专攻<br>考试技巧训练', 'prog4-badge': 'UPSA 关键年',
+      'prog5-h5': '深化冲刺', 'prog5-p': 'HOTS 题型强化<br>写作深度提升<br>跨科综合思维',
+      'prog6-h5': 'UASA 总冲刺', 'prog6-p': '全科总复习<br>模拟考试演练<br>自信迎战升中', 'prog6-badge': 'UASA 毕业关',
+      'hots-h3': '我们锻炼的思维能力',
+      'oc-h2': '更多课程，<br>一站式学习中心', 'oc-sub': '除了安亲补习，我们还提供专业课程，<br>从小学到中学，全程陪伴孩子成长。',
+      'sch-h2': '安亲班时间表', 'sch-sub': '早上班与下午班皆有，配合孩子的上课时段灵活安排。',
+      'tab-am': '早上班（配合下午班学校）', 'tab-pm': '下午班（配合早上班学校）',
+      'sch-note': '* 时间表只供参考，每个年级会因不同的课程安排而有所不同。',
+      'meal-h2': '营养均衡，<br>助力孩子活力成长',
+      'meal-p': '我们非常重视孩子的营养均衡，为他们精心准备多样化、营养丰富的健康餐点。通过引导孩子养成良好的饮食习惯，增强体质，增进专注力与学习动力。',
+      'meal-c1': '一饭', 'meal-c2': '一肉', 'meal-c3': '一菜', 'meal-c4': '一汤', 'meal-c5': '一水果',
+      'cta-h2': '名额有限，现在联系我们', 'cta-p': '欢迎预约参观，亲身感受弘文馆的温暖氛围。', 'cta-btn2': '填写报名表',
+      'contact-h2': '联系我们', 'contact-sub': '欢迎预约参观，亲身感受弘文馆的温暖氛围。',
+      'addr-label': '地址', 'phone-label': '电话 / WhatsApp', 'hours-label': '开放时间',
+      'hours-text': '早上班：8:00am – 11:00am<br>下午班：1:00pm – 6:30pm<br>星期一至五（学校上课日）',
+      'form-name-label': '家长姓名', 'form-name-ph': '您的姓名',
+      'form-phone-label': '联系号码', 'form-grade-label': '孩子就读年级', 'form-grade-ph': '请选择年级',
+      'form-session-label': '上课时段', 'session-am': '早上班（配合下午班学校）', 'session-pm': '下午班（配合早上班学校）', 'session-tbc': '待确认',
+      'form-msg-label': '留言', 'form-msg-ph': '如有疑问，欢迎留言…',
+      'form-submit': '提交报名 / Submit Enquiry',
+      'footer-tagline': '把成长的每一天，都托付给温柔的守护'
+    },
+    en: {
+      'nav-name': 'HongWenGuan Education Centre<small>Setia Indah · After-School Care</small>',
+      'nav-wa': 'WhatsApp Enquiry',
+      'hero-h1': 'Let Learning & Growth,<br>Quietly <em>Blossom</em> in Every Child',
+      'hero-p': 'Entrust every precious day of growth to our warm and caring hands. HongWenGuan After-School Care — professional teachers, nurturing environment, helping children grow happily and develop holistically.',
+      'hero-btn1': 'Book a Visit', 'hero-btn2': 'About Us',
+      'hstat1-l': 'Professional Teachers', 'hstat2-n': 'Year 1–6', 'hstat2-l': 'All Grades Covered', 'hstat3-n': '5 Subjects', 'hstat3-l': 'Full Coverage',
+      'about-cap': 'Reading Together · Building a Love for Books',
+      'about-h2': 'A Safe Haven for Every Child to Thrive',
+      'about-p1': 'We create a safe, comfortable and caring learning space where children can grow with confidence, feel a sense of belonging, and experience genuine happiness. Teachers and peers encourage children to express themselves, building self-confidence in a warm and supportive environment.',
+      'about-p2': 'At HongWenGuan, we believe in holistic development — nurturing both academic excellence and life skills. Through systematic curriculum planning and personalised guidance, students develop a genuine love for learning while achieving steady academic improvement.',
+      'about-quote': 'Every improvement is a shared achievement between teacher and student; every milestone is a testament to a child\'s growing confidence. At HongWenGuan, academic success and personal growth go hand in hand.',
+      'feat-h2': 'A Day at HongWenGuan', 'feat-sub': 'Learning, growing, exploring, living — every moment thoughtfully designed.',
+      'fc1-tag': 'Homework Guidance', 'fc1-h3': 'Teachers by Their Side, Every Challenge Solved', 'fc1-p': 'Dedicated teachers guide each child through their homework, breaking down difficult concepts so children truly understand. Parents can relax — homework is done before they get home.',
+      'fc2-tag': 'Life Skills', 'fc2-h3': 'Hands-On Learning, Building Real Capabilities', 'fc2-p': 'Weekly life activities let children learn by doing and grow through experience — developing independence, creativity and teamwork along the way.',
+      'fc3-tag': 'Cross-Disciplinary', 'fc3-h3': 'Beyond the Textbook, Into the Real World', 'fc3-p': 'Teachers guide children to observe nature and conduct experiments, connecting classroom knowledge with real-world experiences — making curiosity the greatest motivator to learn.',
+      'artwall-label': 'What Our Kids Say', 'artwall-h2': 'Yes,<br>I Love It Here Too',
+      'artwall-p1': 'HongWenGuan is more than an after-school care centre — it\'s a place children genuinely look forward to every day. Here, every child gets to shine in their own unique way.',
+      'artwall-p2': 'Bold enough to chase the wind as children, brave enough to chase their dreams as adults.',
+      'phi-h2': 'Our Expertise',
+      'phi1-h3': 'Child-Centred Learning', 'phi1-p': 'Every child is uniquely different. We carefully observe each student\'s pace and learning gaps, tailoring our approach so every child is truly seen and builds genuine confidence.',
+      'phi2-h3': 'Competency-Based Education', 'phi2-p': 'Grades are just the starting point. Our real goal is to help children learn how to think and how to learn. Aligned with UPSA and UASA frameworks, we develop higher-order thinking skills for long-term success.',
+      'phi3-h3': 'Professional Teaching at the Core', 'phi3-p': 'Expert teachers, rigorous curriculum, proven methods. We don\'t chase shortcuts — we focus on helping every child truly understand, genuinely improve, and authentically love learning.',
+      'env-h2': 'A Thoughtfully Designed Learning Space', 'env-sub': 'Safe, comfortable and beautiful — a place children look forward to every day.',
+      'env-cap1': 'Welcoming Reception', 'env-cap2': 'Reading Terrace', 'env-cap3': 'Multi-Purpose Learning Room',
+      'teachers-h2': 'Professional & Dedicated Educators',
+      'teachers-p1': 'When it comes to what matters most in a student\'s learning journey, we are the experts. We focus on the three essentials: understand the concept, master the method, practise correctly.',
+      'teachers-p2': 'Our teachers sit beside students, identify their blind spots, break down difficult problems, and drill strategies until they stick — so children\'s grades truly go up.',
+      't1-qual': 'Ibrahim Teachers College, JB<br>Current SJKC Primary School Teacher', 't1-exp': '20 Years Experience',
+      't2-qual': 'DECE Diploma, SEGi University<br>Montessori MCI Certificate', 't2-exp': '20yrs Early Ed · 5yrs Counselling',
+      't3-qual': 'Chinese Education System<br>Years of Tuition Experience in KL', 't3-exp': 'Senior Chinese Language Teacher',
+      't4-qual': 'BM Dept, Southern University College<br>Former BM Teacher at Kuen Cheng', 't4-exp': 'Extensive BM Teaching',
+      't5-qual': 'Applied Arts, Fu Jen Catholic Univ, Taiwan<br>Cultural Children Camp Organiser', 't5-exp': '12 Years Early Education',
+      't6-qual': 'National Taichung University of Education<br>Master in Early Childhood Education', 't6-exp': 'Chinese Tutoring · Life Education',
+      't7-qual': 'Nanyang Technological University, Singapore<br>Mechanical Engineering', 't7-exp': 'English · Science · Mathematics',
+      't8-qual': 'Commerce, University of Canberra, Australia<br>Senior Chinese Teacher at HWG', 't8-exp': 'Senior Chinese Language',
+      't9-qual': 'Multimedia University, Bachelor\'s Degree<br>Satir Family Therapy Counselling Diploma', 't9-exp': 'Reading Comprehension Trainer',
+      't10-qual': 'Chinese Dept, University of Malaya<br>Maths Workbook Question Editor', 't10-exp': 'Chinese · Mathematics',
+      'curr-h2': 'All 5 Subjects,<br>Aligned with SJKC Syllabus', 'curr-sub': 'Based on Malaysia\'s KSSR curriculum, we strengthen all 5 subjects simultaneously — not just for exam results, but to develop genuine thinking skills.',
+      'subj1-h4': 'Chinese', 'subj1-p': 'Reading Comprehension<br>Essay Writing<br>Vocabulary & Sentences<br>Handwriting',
+      'subj2-h4': 'English', 'subj2-p': 'Reading Comprehension<br>Creative Writing<br>Grammar & Vocab<br>Oral Expression',
+      'subj3-h4': 'Mathematics', 'subj3-p': 'Arithmetic Operations<br>Problem Solving<br>Logical Reasoning<br>Data Analysis',
+      'subj4-h4': 'Bahasa Malaysia', 'subj4-p': 'Reading Comprehension<br>Written Expression<br>Grammar Usage<br>Oral Expression',
+      'subj5-h4': 'Science', 'subj5-p': 'Scientific Concepts<br>Observation & Inquiry<br>Experiment Analysis<br>Critical Thinking',
+      'subj-hots': 'HOTS Higher-Order Thinking',
+      'prog-label': 'Year-by-Year Progression',
+      'prog1-h5': 'Foundation Building', 'prog1-p': 'Build study habits<br>Introduction to 5 subjects<br>Develop reading interest',
+      'prog2-h5': 'Strengthening Roots', 'prog2-p': 'Vocabulary & arithmetic<br>Sentence writing practice<br>Comprehension development',
+      'prog3-h5': 'Expanding Abilities', 'prog3-p': 'Paragraph writing<br>Problem-solving strategies<br>Science inquiry introduction',
+      'prog4-h5': 'UPSA Preparation', 'prog4-p': 'Systematic 5-subject revision<br>HOTS question mastery<br>Exam technique training', 'prog4-badge': 'UPSA Key Year',
+      'prog5-h5': 'Advanced Sprint', 'prog5-p': 'HOTS question intensive<br>Advanced essay writing<br>Cross-subject thinking',
+      'prog6-h5': 'UASA Final Sprint', 'prog6-p': 'Full subject revision<br>Mock exam practice<br>Confident into secondary', 'prog6-badge': 'UASA Final Milestone',
+      'hots-h3': 'Thinking Skills We Develop',
+      'oc-h2': 'More Programmes,<br>One-Stop Learning Centre', 'oc-sub': 'Beyond after-school care, we offer specialised courses from primary through secondary — with you every step of the way.',
+      'sch-h2': 'Daily Timetable', 'sch-sub': 'Both morning and afternoon sessions available, flexibly designed around your child\'s school hours.',
+      'tab-am': 'Morning Session (for afternoon-school students)', 'tab-pm': 'Afternoon Session (for morning-school students)',
+      'sch-note': '* Schedule is for reference only. May vary by year group and curriculum arrangement.',
+      'meal-h2': 'Nutritious Meals,<br>Fuelling Active Young Minds',
+      'meal-p': 'We take children\'s nutrition seriously, preparing diverse and wholesome meals with care. By guiding healthy eating habits, we help strengthen their bodies, improve concentration and boost learning motivation.',
+      'meal-c1': 'Rice', 'meal-c2': 'Protein', 'meal-c3': 'Vegetables', 'meal-c4': 'Soup', 'meal-c5': 'Fruit',
+      'cta-h2': 'Limited Spots — Enquire Today', 'cta-p': 'Book a visit and experience the warm atmosphere at HongWenGuan yourself.', 'cta-btn2': 'Fill in Enquiry Form',
+      'contact-h2': 'Contact Us', 'contact-sub': 'Book a visit and experience the warm atmosphere at HongWenGuan yourself.',
+      'addr-label': 'Address', 'phone-label': 'Phone / WhatsApp', 'hours-label': 'Opening Hours',
+      'hours-text': 'Morning: 8:00am – 11:00am<br>Afternoon: 1:00pm – 6:30pm<br>Monday to Friday (school days)',
+      'form-name-label': 'Parent Name', 'form-name-ph': 'Your Name',
+      'form-phone-label': 'Contact Number', 'form-grade-label': "Child's Year", 'form-grade-ph': 'Select Year',
+      'form-session-label': 'Session', 'session-am': 'Morning Session (for afternoon-school students)', 'session-pm': 'Afternoon Session (for morning-school students)', 'session-tbc': 'To Be Confirmed',
+      'form-msg-label': 'Message', 'form-msg-ph': 'Any questions? Feel free to leave a message…',
+      'form-submit': 'Submit Enquiry',
+      'footer-tagline': 'Entrusting every day of growth to our gentle and caring hands'
+    }
+  };
+
+  let currentLang = 'zh';
+
+  function applyLang(lang) {
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      if (T[lang][key] !== undefined) el.innerHTML = T[lang][key];
+    });
+    document.querySelectorAll('[data-i18n-ph]').forEach(el => {
+      const key = el.getAttribute('data-i18n-ph');
+      if (T[lang][key] !== undefined) el.placeholder = T[lang][key];
+    });
+    document.getElementById('lang-btn').textContent = lang === 'zh' ? 'EN' : '中文';
+    document.documentElement.lang = lang === 'zh' ? 'zh' : 'en';
+  }
+
+  function toggleLang() {
+    currentLang = currentLang === 'zh' ? 'en' : 'zh';
+    applyLang(currentLang);
+  }
+
   function showTab(e,id){
     document.querySelectorAll('.sch-panel').forEach(p=>p.classList.remove('active'));
     document.querySelectorAll('.sch-tab').forEach(t=>t.classList.remove('active'));
