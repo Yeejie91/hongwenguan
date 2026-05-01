@@ -649,26 +649,26 @@
     </div>
     <div class="sch-panel active" id="tab-am">
       <table class="sch-table">
-        <thead><tr><th>时间</th><th>周一至周四</th><th>周五</th></tr></thead>
+        <thead><tr><th data-i18n="th-time">时间</th><th data-i18n="th-mth">周一至周四</th><th data-i18n="th-fri">周五</th></tr></thead>
         <tbody>
-          <tr><td>8:00 – 8:30am</td><td>报到时间</td><td><span class="tbg tbg-g">同</span></td></tr>
-          <tr><td>8:30 – 9:00am</td><td>功课班 · 生活小活动</td><td>功课班</td></tr>
-          <tr><td>9:00 – 10:30am</td><td>各科补习</td><td><span class="tbg tbg-b">跨学科活动</span></td></tr>
-          <tr><td>10:30 – 11:00am</td><td>午餐</td><td><span class="tbg tbg-g">同</span></td></tr>
-          <tr><td>11:00am</td><td>送孩子上学</td><td><span class="tbg tbg-g">同</span></td></tr>
+          <tr><td>8:00 – 8:30am</td><td data-i18n="am-r1-mon">报到时间</td><td><span class="tbg tbg-g" data-i18n="same">同</span></td></tr>
+          <tr><td>8:30 – 9:00am</td><td data-i18n="am-r2-mon">功课班 · 生活小活动</td><td data-i18n="am-r2-fri">功课班</td></tr>
+          <tr><td>9:00 – 10:30am</td><td data-i18n="am-r3-mon">各科补习</td><td><span class="tbg tbg-b" data-i18n="am-r3-fri">跨学科活动</span></td></tr>
+          <tr><td>10:30 – 11:00am</td><td data-i18n="am-r4-mon">午餐</td><td><span class="tbg tbg-g" data-i18n="same">同</span></td></tr>
+          <tr><td>11:00am</td><td data-i18n="am-r5-mon">送孩子上学</td><td><span class="tbg tbg-g" data-i18n="same">同</span></td></tr>
         </tbody>
       </table>
     </div>
     <div class="sch-panel" id="tab-pm">
       <table class="sch-table">
-        <thead><tr><th>时间</th><th>周一至周四</th><th>周五</th></tr></thead>
+        <thead><tr><th data-i18n="th-time">时间</th><th data-i18n="th-mth">周一至周四</th><th data-i18n="th-fri">周五</th></tr></thead>
         <tbody>
-          <tr><td>1:00 – 1:30pm</td><td>报到时间</td><td><span class="tbg tbg-g">同</span></td></tr>
-          <tr><td>1:30 – 2:30pm</td><td>午餐 · 洗漱</td><td><span class="tbg tbg-g">同</span></td></tr>
-          <tr><td>2:30 – 3:30pm</td><td>功课辅导</td><td><span class="tbg tbg-g">同</span></td></tr>
-          <tr><td>3:30 – 4:30pm</td><td>各科补习</td><td><span class="tbg tbg-a">生活活动</span></td></tr>
-          <tr><td>4:30 – 5:30pm</td><td>功课辅导 · 生活活动</td><td><span class="tbg tbg-b">跨学科课程</span></td></tr>
-          <tr><td>5:30 – 6:30pm</td><td>接送回家</td><td><span class="tbg tbg-g">同</span></td></tr>
+          <tr><td>1:00 – 1:30pm</td><td data-i18n="pm-r1-mon">报到时间</td><td><span class="tbg tbg-g" data-i18n="same">同</span></td></tr>
+          <tr><td>1:30 – 2:30pm</td><td data-i18n="pm-r2-mon">午餐 · 洗漱</td><td><span class="tbg tbg-g" data-i18n="same">同</span></td></tr>
+          <tr><td>2:30 – 3:30pm</td><td data-i18n="pm-r3-mon">功课辅导</td><td><span class="tbg tbg-g" data-i18n="same">同</span></td></tr>
+          <tr><td>3:30 – 4:30pm</td><td data-i18n="pm-r4-mon">各科补习</td><td><span class="tbg tbg-a" data-i18n="pm-r4-fri">生活活动</span></td></tr>
+          <tr><td>4:30 – 5:30pm</td><td data-i18n="pm-r5-mon">功课辅导 · 生活活动</td><td><span class="tbg tbg-b" data-i18n="pm-r5-fri">跨学科课程</span></td></tr>
+          <tr><td>5:30 – 6:30pm</td><td data-i18n="pm-r6-mon">接送回家</td><td><span class="tbg tbg-g" data-i18n="same">同</span></td></tr>
         </tbody>
       </table>
     </div>
@@ -829,6 +829,13 @@
       'sch-h2': '安亲班时间表', 'sch-sub': '早上班与下午班皆有，配合孩子的上课时段灵活安排。',
       'tab-am': '早上班（配合下午班学校）', 'tab-pm': '下午班（配合早上班学校）',
       'sch-note': '* 时间表只供参考，每个年级会因不同的课程安排而有所不同。',
+      'th-time': '时间', 'th-mth': '周一至周四', 'th-fri': '周五', 'same': '同',
+      'am-r1-mon': '报到时间', 'am-r2-mon': '功课班 · 生活小活动', 'am-r2-fri': '功课班',
+      'am-r3-mon': '各科补习', 'am-r3-fri': '跨学科活动',
+      'am-r4-mon': '午餐', 'am-r5-mon': '送孩子上学',
+      'pm-r1-mon': '报到时间', 'pm-r2-mon': '午餐 · 洗漱', 'pm-r3-mon': '功课辅导',
+      'pm-r4-mon': '各科补习', 'pm-r4-fri': '生活活动',
+      'pm-r5-mon': '功课辅导 · 生活活动', 'pm-r5-fri': '跨学科课程', 'pm-r6-mon': '接送回家',
       'meal-h2': '营养均衡，<br>助力孩子活力成长',
       'meal-p': '我们非常重视孩子的营养均衡，为他们精心准备多样化、营养丰富的健康餐点。通过引导孩子养成良好的饮食习惯，增强体质，增进专注力与学习动力。',
       'meal-c1': '一饭', 'meal-c2': '一肉', 'meal-c3': '一菜', 'meal-c4': '一汤', 'meal-c5': '一水果',
@@ -844,23 +851,23 @@
       'footer-tagline': '把成长的每一天，都托付给温柔的守护'
     },
     en: {
-      'nav-name': 'HongWenGuan Education Centre<small>Setia Indah · After-School Care</small>',
+      'nav-name': 'Scholar\'s Hall<small>Where Learning Blossoms</small>',
       'nav-wa': 'WhatsApp Enquiry',
       'hero-h1': 'Let Learning & Growth,<br>Quietly <em>Blossom</em> in Every Child',
-      'hero-p': 'Entrust every precious day of growth to our warm and caring hands. HongWenGuan After-School Care — professional teachers, nurturing environment, helping children grow happily and develop holistically.',
+      'hero-p': 'Entrust every precious day of growth to our warm and caring hands. Scholar\'s Hall — professional teachers, nurturing environment, helping children grow happily and develop holistically.',
       'hero-btn1': 'Book a Visit', 'hero-btn2': 'About Us',
       'hstat1-l': 'Professional Teachers', 'hstat2-n': 'Year 1–6', 'hstat2-l': 'All Grades Covered', 'hstat3-n': '5 Subjects', 'hstat3-l': 'Full Coverage',
       'about-cap': 'Reading Together · Building a Love for Books',
       'about-h2': 'A Safe Haven for Every Child to Thrive',
       'about-p1': 'We create a safe, comfortable and caring learning space where children can grow with confidence, feel a sense of belonging, and experience genuine happiness. Teachers and peers encourage children to express themselves, building self-confidence in a warm and supportive environment.',
-      'about-p2': 'At HongWenGuan, we believe in holistic development — nurturing both academic excellence and life skills. Through systematic curriculum planning and personalised guidance, students develop a genuine love for learning while achieving steady academic improvement.',
-      'about-quote': 'Every improvement is a shared achievement between teacher and student; every milestone is a testament to a child\'s growing confidence. At HongWenGuan, academic success and personal growth go hand in hand.',
+      'about-p2': 'At Scholar\'s Hall, we believe in holistic development — nurturing both academic excellence and life skills. Through systematic curriculum planning and personalised guidance, students develop a genuine love for learning while achieving steady academic improvement.',
+      'about-quote': 'Every improvement is a shared achievement between teacher and student; every milestone is a testament to a child\'s growing confidence. At Scholar\'s Hall, academic success and personal growth go hand in hand.',
       'feat-h2': 'A Day at HongWenGuan', 'feat-sub': 'Learning, growing, exploring, living — every moment thoughtfully designed.',
       'fc1-tag': 'Homework Guidance', 'fc1-h3': 'Teachers by Their Side, Every Challenge Solved', 'fc1-p': 'Dedicated teachers guide each child through their homework, breaking down difficult concepts so children truly understand. Parents can relax — homework is done before they get home.',
       'fc2-tag': 'Life Skills', 'fc2-h3': 'Hands-On Learning, Building Real Capabilities', 'fc2-p': 'Weekly life activities let children learn by doing and grow through experience — developing independence, creativity and teamwork along the way.',
       'fc3-tag': 'Cross-Disciplinary', 'fc3-h3': 'Beyond the Textbook, Into the Real World', 'fc3-p': 'Teachers guide children to observe nature and conduct experiments, connecting classroom knowledge with real-world experiences — making curiosity the greatest motivator to learn.',
       'artwall-label': 'What Our Kids Say', 'artwall-h2': 'Yes,<br>I Love It Here Too',
-      'artwall-p1': 'HongWenGuan is more than an after-school care centre — it\'s a place children genuinely look forward to every day. Here, every child gets to shine in their own unique way.',
+      'artwall-p1': 'Scholar\'s Hall is more than an after-school care centre — it\'s a place children genuinely look forward to every day. Here, every child gets to shine in their own unique way.',
       'artwall-p2': 'Bold enough to chase the wind as children, brave enough to chase their dreams as adults.',
       'phi-h2': 'Our Expertise',
       'phi1-h3': 'Child-Centred Learning', 'phi1-p': 'Every child is uniquely different. We carefully observe each student\'s pace and learning gaps, tailoring our approach so every child is truly seen and builds genuine confidence.',
@@ -869,7 +876,7 @@
       'env-h2': 'A Thoughtfully Designed Learning Space', 'env-sub': 'Safe, comfortable and beautiful — a place children look forward to every day.',
       'env-cap1': 'Welcoming Reception', 'env-cap2': 'Reading Terrace', 'env-cap3': 'Multi-Purpose Learning Room',
       'teachers-h2': 'Professional & Dedicated Educators',
-      'teachers-p1': 'When it comes to what matters most in a student\'s learning journey, we are the experts. We focus on the three essentials: understand the concept, master the method, practise correctly.',
+      'teachers-p1': 'At Scholar\'s Hall, what matters most is real results. We focus on the three essentials: understand the concept, master the method, practise correctly.',
       'teachers-p2': 'Our teachers sit beside students, identify their blind spots, break down difficult problems, and drill strategies until they stick — so children\'s grades truly go up.',
       't1-qual': 'Ibrahim Teachers College, JB<br>Current SJKC Primary School Teacher', 't1-exp': '20 Years Experience',
       't2-qual': 'DECE Diploma, SEGi University<br>Montessori MCI Certificate', 't2-exp': '20yrs Early Ed · 5yrs Counselling',
@@ -916,11 +923,18 @@
       'sch-h2': 'Daily Timetable', 'sch-sub': 'Both morning and afternoon sessions available, flexibly designed around your child\'s school hours.',
       'tab-am': 'Morning Session (for afternoon-school students)', 'tab-pm': 'Afternoon Session (for morning-school students)',
       'sch-note': '* Schedule is for reference only. May vary by year group and curriculum arrangement.',
+      'th-time': 'Time', 'th-mth': 'Mon – Thu', 'th-fri': 'Friday', 'same': 'Same',
+      'am-r1-mon': 'Arrival & Registration', 'am-r2-mon': 'Homework · Life Activity', 'am-r2-fri': 'Homework',
+      'am-r3-mon': 'Subject Tuition', 'am-r3-fri': 'Cross-Disciplinary Activity',
+      'am-r4-mon': 'Lunch', 'am-r5-mon': 'Send to School',
+      'pm-r1-mon': 'Arrival & Registration', 'pm-r2-mon': 'Lunch · Freshen Up', 'pm-r3-mon': 'Homework Guidance',
+      'pm-r4-mon': 'Subject Tuition', 'pm-r4-fri': 'Life Activity',
+      'pm-r5-mon': 'Homework · Life Activity', 'pm-r5-fri': 'Cross-Disciplinary', 'pm-r6-mon': 'Pick-Up / Home Time',
       'meal-h2': 'Nutritious Meals,<br>Fuelling Active Young Minds',
       'meal-p': 'We take children\'s nutrition seriously, preparing diverse and wholesome meals with care. By guiding healthy eating habits, we help strengthen their bodies, improve concentration and boost learning motivation.',
       'meal-c1': 'Rice', 'meal-c2': 'Protein', 'meal-c3': 'Vegetables', 'meal-c4': 'Soup', 'meal-c5': 'Fruit',
-      'cta-h2': 'Limited Spots — Enquire Today', 'cta-p': 'Book a visit and experience the warm atmosphere at HongWenGuan yourself.', 'cta-btn2': 'Fill in Enquiry Form',
-      'contact-h2': 'Contact Us', 'contact-sub': 'Book a visit and experience the warm atmosphere at HongWenGuan yourself.',
+      'cta-h2': 'Limited Spots — Enquire Today', 'cta-p': 'Book a visit and experience the warm atmosphere at Scholar\'s Hall yourself.', 'cta-btn2': 'Fill in Enquiry Form',
+      'contact-h2': 'Contact Us', 'contact-sub': 'Book a visit and experience the warm atmosphere at Scholar\'s Hall yourself.',
       'addr-label': 'Address', 'phone-label': 'Phone / WhatsApp', 'hours-label': 'Opening Hours',
       'hours-text': 'Morning: 8:00am – 11:00am<br>Afternoon: 1:00pm – 6:30pm<br>Monday to Friday (school days)',
       'form-name-label': 'Parent Name', 'form-name-ph': 'Your Name',
@@ -928,7 +942,7 @@
       'form-session-label': 'Session', 'session-am': 'Morning Session (for afternoon-school students)', 'session-pm': 'Afternoon Session (for morning-school students)', 'session-tbc': 'To Be Confirmed',
       'form-msg-label': 'Message', 'form-msg-ph': 'Any questions? Feel free to leave a message…',
       'form-submit': 'Submit Enquiry',
-      'footer-tagline': 'Entrusting every day of growth to our gentle and caring hands'
+      'footer-tagline': 'Scholar\'s Hall · Where Learning Blossoms'
     }
   };
 
