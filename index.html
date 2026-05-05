@@ -248,6 +248,37 @@
     .sbtn { background:var(--red); color:white; border:none; border-radius:8px; padding:14px; font-size:14px; font-weight:800; cursor:pointer; transition:all .2s; font-family:'Noto Sans SC',sans-serif; }
     .sbtn:hover { background:var(--red-d); }
 
+    /* ENROLL SECTION */
+    .enroll { background:white; border-top:3px solid var(--red); }
+    .enroll-header { text-align:center; margin-bottom:48px; }
+    .enroll-badge { display:inline-flex; align-items:center; gap:8px; background:var(--red); color:white; border-radius:6px; padding:6px 18px; font-size:13px; font-weight:700; letter-spacing:1.5px; font-family:'Noto Sans SC',sans-serif; margin-bottom:16px; }
+    .enroll-badge::before { content:''; width:8px; height:8px; background:white; border-radius:50%; display:inline-block; animation:pulse-dot 1.5s ease-in-out infinite; }
+    @keyframes pulse-dot { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.5;transform:scale(.7)} }
+    .enroll-title { font-size:clamp(30px,4.5vw,48px); font-weight:900; font-family:'Noto Sans SC',sans-serif; color:var(--dark); line-height:1.2; margin-bottom:10px; }
+    .enroll-sub { font-size:16px; color:var(--mid); font-family:'Noto Sans SC',sans-serif; }
+    .enroll-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; margin-bottom:40px; }
+    .enroll-card { border-radius:16px; padding:32px 28px; text-align:center; border:2px solid var(--border); background:var(--sand); transition:transform .2s,box-shadow .2s; }
+    .enroll-card:hover { transform:translateY(-4px); box-shadow:0 12px 36px rgba(0,0,0,.1); }
+    .enroll-card.urgent { border-color:var(--red); background:#FFF5F7; }
+    .enroll-card-icon { font-size:28px; margin-bottom:14px; }
+    .enroll-card-label { font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase; color:var(--mid); font-family:'Noto Sans SC',sans-serif; margin-bottom:12px; }
+    .enroll-card.urgent .enroll-card-label { color:var(--red); }
+    .enroll-card-main { font-size:clamp(22px,3vw,30px); font-weight:900; font-family:'Noto Sans SC',sans-serif; color:var(--dark); line-height:1.35; margin-bottom:8px; }
+    .enroll-card.urgent .enroll-card-main { color:var(--red); }
+    .enroll-card-note { font-size:14px; color:var(--mid); font-family:'Noto Sans SC',sans-serif; }
+    .enroll-sessions { display:flex; gap:12px; justify-content:center; flex-wrap:wrap; margin-bottom:40px; }
+    .enroll-sess { display:flex; flex-direction:column; align-items:center; background:var(--sand); border-radius:12px; padding:20px 32px; border:1.5px solid var(--border); min-width:200px; }
+    .enroll-sess-name { font-size:20px; font-weight:900; font-family:'Noto Sans SC',sans-serif; color:var(--dark); margin-bottom:4px; }
+    .enroll-sess-time { font-size:14px; color:var(--mid); font-family:'Noto Sans SC',sans-serif; }
+    .enroll-sess-status { margin-top:8px; font-size:13px; font-weight:700; font-family:'Noto Sans SC',sans-serif; padding:3px 12px; border-radius:20px; }
+    .status-ok { background:#DCFCE7; color:#15803D; }
+    .status-tight { background:#FEE2E2; color:var(--red); }
+    .enroll-cta { text-align:center; }
+    .enroll-cta-btn { display:inline-block; background:var(--red); color:white; border-radius:10px; padding:18px 48px; font-size:17px; font-weight:800; text-decoration:none; font-family:'Noto Sans SC',sans-serif; box-shadow:0 8px 28px rgba(200,16,46,.35); transition:all .2s; }
+    .enroll-cta-btn:hover { background:var(--red-d); transform:translateY(-2px); box-shadow:0 12px 36px rgba(200,16,46,.45); }
+    .enroll-cta-note { margin-top:14px; font-size:14px; color:var(--mid); font-family:'Noto Sans SC',sans-serif; }
+    @media(max-width:900px){ .enroll-grid { grid-template-columns:1fr; } .enroll-sessions { flex-direction:column; align-items:center; } }
+
     footer { background:#0C0A09; color:rgba(255,255,255,.3); text-align:center; padding:28px 5vw; font-size:12px; font-family:'Noto Sans SC',sans-serif; }
     footer span { color:var(--red); }
 
@@ -579,7 +610,7 @@
           <p style="font-size:14px;color:var(--mid);font-family:'Noto Sans SC',sans-serif;margin-top:20px;line-height:1.8;" data-i18n="oc1-note">2026年初一班级现正招生，欢迎联系了解时间表与详情。</p>
         </div>
         <div class="oc-foot">
-          <a href="https://wa.me/60166760079?text=您好！我想询问弘文馆中学补习班的课程详情。" class="oc-wa" target="_blank" data-i18n="oc-wa-btn">WhatsApp 询问详情</a>
+          <a href="secondary.html" class="oc-wa" data-i18n="oc1-view">查看中学课程详情</a>
         </div>
       </div>
 
@@ -697,6 +728,56 @@
   </div>
 </section>
 
+<!-- ENROLL -->
+<section class="enroll" id="enroll">
+  <div class="mxw">
+    <div class="enroll-header">
+      <div class="enroll-badge" data-i18n="enroll-badge">现正招生</div>
+      <h2 class="enroll-title" data-i18n="enroll-title">弘文馆安亲班<br>开放报名中</h2>
+      <p class="enroll-sub" data-i18n="enroll-sub">名额有限，先报先得。欢迎联系了解详情。</p>
+    </div>
+
+    <div class="enroll-grid">
+      <div class="enroll-card">
+        <div class="enroll-card-icon">🎒</div>
+        <div class="enroll-card-label" data-i18n="enroll-lbl1">招生年级</div>
+        <div class="enroll-card-main" data-i18n="enroll-main1">一年级 至 六年级</div>
+        <div class="enroll-card-note" data-i18n="enroll-note1">Tahun 1 – Tahun 6</div>
+      </div>
+      <div class="enroll-card">
+        <div class="enroll-card-icon">⏰</div>
+        <div class="enroll-card-label" data-i18n="enroll-lbl2">上课时段</div>
+        <div class="enroll-card-main" data-i18n="enroll-main2">早上班 &amp; 下午班</div>
+        <div class="enroll-card-note" data-i18n="enroll-note2">配合孩子学校时段灵活安排</div>
+      </div>
+      <div class="enroll-card urgent">
+        <div class="enroll-card-icon">⚡</div>
+        <div class="enroll-card-label" data-i18n="enroll-lbl3">名额状态</div>
+        <div class="enroll-card-main" data-i18n="enroll-main3">下午班名额紧张</div>
+        <div class="enroll-card-note" data-i18n="enroll-note3">早上班尚有名额，欢迎查询</div>
+      </div>
+    </div>
+
+    <div class="enroll-sessions">
+      <div class="enroll-sess">
+        <div class="enroll-sess-name" data-i18n="sess-am-name">早上班</div>
+        <div class="enroll-sess-time">8:00am – 11:00am</div>
+        <div class="enroll-sess-status status-ok" data-i18n="sess-am-status">尚有名额</div>
+      </div>
+      <div class="enroll-sess">
+        <div class="enroll-sess-name" data-i18n="sess-pm-name">下午班</div>
+        <div class="enroll-sess-time">1:00pm – 6:30pm</div>
+        <div class="enroll-sess-status status-tight" data-i18n="sess-pm-status">名额紧张，速询</div>
+      </div>
+    </div>
+
+    <div class="enroll-cta">
+      <a href="https://wa.me/60166760079" class="enroll-cta-btn" target="_blank" data-i18n="enroll-btn">立即报名 · WhatsApp 016-676 0079</a>
+      <p class="enroll-cta-note" data-i18n="enroll-cta-note">或填写下方表格，我们将在一个工作日内回复您</p>
+    </div>
+  </div>
+</section>
+
 <!-- CTA -->
 <section class="cta">
   <div class="mxw">
@@ -810,6 +891,7 @@
       'prog6-h5': 'UASA 总冲刺', 'prog6-p': '全科总复习<br>模拟考试演练<br>自信迎战升中', 'prog6-badge': 'UASA 毕业关',
       'hots-h3': '我们锻炼的思维能力',
       'oc-h2': '更多课程，<br>一站式学习中心', 'oc-sub': '除了安亲补习，我们还提供专业课程，<br>从小学到中学，全程陪伴孩子成长。',
+      'oc1-view': '查看中学课程详情',
       'oc1-tag': '中学课程', 'oc1-h3': '中学补习班',
       'oc1-desc': '专业名师坐镇，针对独中与国中课程，全面提升各科成绩，从初一开始打好基础。',
       'oc1-c1': '数学', 'oc1-c2': '英文', 'oc1-c3': '国文', 'oc1-c4': '科学',
@@ -839,6 +921,16 @@
       'meal-h2': '营养均衡，<br>助力孩子活力成长',
       'meal-p': '我们非常重视孩子的营养均衡，为他们精心准备多样化、营养丰富的健康餐点。通过引导孩子养成良好的饮食习惯，增强体质，增进专注力与学习动力。',
       'meal-c1': '一饭', 'meal-c2': '一肉', 'meal-c3': '一菜', 'meal-c4': '一汤', 'meal-c5': '一水果',
+      'enroll-badge': '现正招生',
+      'enroll-title': '弘文馆安亲班<br>开放报名中',
+      'enroll-sub': '名额有限，先报先得。欢迎联系了解详情。',
+      'enroll-lbl1': '招生年级', 'enroll-main1': '一年级 至 六年级', 'enroll-note1': 'Tahun 1 – Tahun 6',
+      'enroll-lbl2': '上课时段', 'enroll-main2': '早上班 &amp; 下午班', 'enroll-note2': '配合孩子学校时段灵活安排',
+      'enroll-lbl3': '名额状态', 'enroll-main3': '下午班名额紧张', 'enroll-note3': '早上班尚有名额，欢迎查询',
+      'sess-am-name': '早上班', 'sess-am-status': '尚有名额',
+      'sess-pm-name': '下午班', 'sess-pm-status': '名额紧张，速询',
+      'enroll-btn': '立即报名 · WhatsApp 016-676 0079',
+      'enroll-cta-note': '或填写下方表格，我们将在一个工作日内回复您',
       'cta-h2': '名额有限，现在联系我们', 'cta-p': '欢迎预约参观，亲身感受弘文馆的温暖氛围。', 'cta-btn2': '填写报名表',
       'contact-h2': '联系我们', 'contact-sub': '欢迎预约参观，亲身感受弘文馆的温暖氛围。',
       'addr-label': '地址', 'phone-label': '电话 / WhatsApp', 'hours-label': '开放时间',
@@ -904,6 +996,7 @@
       'prog6-h5': 'UASA Final Sprint', 'prog6-p': 'Full subject revision<br>Mock exam practice<br>Confident into secondary', 'prog6-badge': 'UASA Final Milestone',
       'hots-h3': 'Thinking Skills We Develop',
       'oc-h2': 'More Programmes,<br>One-Stop Learning Centre', 'oc-sub': 'Beyond after-school care, we offer specialised courses from primary through secondary — with you every step of the way.',
+      'oc1-view': 'View Secondary Courses →',
       'oc1-tag': 'Secondary', 'oc1-h3': 'Secondary School Tuition',
       'oc1-desc': 'Expert teachers specialising in both Independent (独中) and National (国中) school curricula — building strong foundations from Form 1 onwards.',
       'oc1-c1': 'Mathematics', 'oc1-c2': 'English', 'oc1-c3': 'Bahasa Malaysia', 'oc1-c4': 'Science',
@@ -933,6 +1026,16 @@
       'meal-h2': 'Nutritious Meals,<br>Fuelling Active Young Minds',
       'meal-p': 'We take children\'s nutrition seriously, preparing diverse and wholesome meals with care. By guiding healthy eating habits, we help strengthen their bodies, improve concentration and boost learning motivation.',
       'meal-c1': 'Rice', 'meal-c2': 'Protein', 'meal-c3': 'Vegetables', 'meal-c4': 'Soup', 'meal-c5': 'Fruit',
+      'enroll-badge': 'Now Enrolling',
+      'enroll-title': 'Scholar\'s Hall After-School Care<br>Open for Enrolment',
+      'enroll-sub': 'Limited spots — first come, first served. Contact us to find out more.',
+      'enroll-lbl1': 'Year Groups', 'enroll-main1': 'Year 1 to Year 6', 'enroll-note1': 'Tahun 1 – Tahun 6',
+      'enroll-lbl2': 'Sessions', 'enroll-main2': 'Morning &amp; Afternoon', 'enroll-note2': 'Flexibly scheduled around your child\'s school hours',
+      'enroll-lbl3': 'Availability', 'enroll-main3': 'Afternoon: Limited Slots', 'enroll-note3': 'Morning session still has openings — enquire now',
+      'sess-am-name': 'Morning Session', 'sess-am-status': 'Spots Available',
+      'sess-pm-name': 'Afternoon Session', 'sess-pm-status': 'Limited — Enquire Now',
+      'enroll-btn': 'Enrol Now · WhatsApp 016-676 0079',
+      'enroll-cta-note': 'Or fill in the form below — we\'ll get back to you within one working day',
       'cta-h2': 'Limited Spots — Enquire Today', 'cta-p': 'Book a visit and experience the warm atmosphere at Scholar\'s Hall yourself.', 'cta-btn2': 'Fill in Enquiry Form',
       'contact-h2': 'Contact Us', 'contact-sub': 'Book a visit and experience the warm atmosphere at Scholar\'s Hall yourself.',
       'addr-label': 'Address', 'phone-label': 'Phone / WhatsApp', 'hours-label': 'Opening Hours',
