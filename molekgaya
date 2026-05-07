@@ -1,0 +1,1438 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>弘文馆中学补习班 2026 | 宽中班底师资 · 百合 & 高雅</title>
+
+  <!-- Facebook OG Tags -->
+  <meta property="og:title" content="弘文馆中学补习班 2026 | 宽中班底师资 · 新山" />
+  <meta property="og:description" content="专教宽中 · 初一到高三 · 实体+线上。多位曾任宽柔中学导师，获选优秀教师奖。百合总院 & 高雅分院，现正招生！" />
+  <meta property="og:image" content="https://hongwenguan.vercel.app/og-middle-school.jpg" />
+  <meta property="og:url" content="https://hongwenguan.vercel.app" />
+  <meta property="og:type" content="website" />
+  <meta name="description" content="弘文馆教育中心中学补习班，宽中班底师资，初一至高三，百合总院与高雅分院，实体+线上灵活上课。" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --red:    #C0392B;
+      --red-dk: #962d22;
+      --gold:   #E6A817;
+      --gold-lt:#FDF0CC;
+      --cream:  #FDF6EC;
+      --dark:   #1A1A2E;
+      --mid:    #3D3D5C;
+      --muted:  #6B6B8A;
+      --white:  #FFFFFF;
+      --border: #E8E0D4;
+      --radius: 14px;
+      --shadow: 0 4px 24px rgba(0,0,0,0.10);
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+      color: var(--dark);
+      background: var(--white);
+      line-height: 1.75;
+      font-size: 18px;
+    }
+    img { max-width: 100%; display: block; object-fit: cover; }
+    a { color: inherit; text-decoration: none; }
+
+    .container { max-width: 800px; margin: 0 auto; padding: 0 22px; }
+    .section { padding: 64px 0; }
+    .section-title {
+      font-size: 2rem;
+      font-weight: 900;
+      color: var(--dark);
+      text-align: center;
+      margin-bottom: 10px;
+      line-height: 1.25;
+    }
+    .section-sub {
+      text-align: center;
+      color: var(--muted);
+      margin-bottom: 40px;
+      font-size: 1rem;
+    }
+    .tag {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--dark);
+      font-size: 0.82rem;
+      font-weight: 800;
+      padding: 5px 14px;
+      border-radius: 20px;
+      letter-spacing: 0.5px;
+    }
+
+    /* ── Sticky Nav ── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      background: var(--dark);
+      padding: 14px 22px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .nav-logo {
+      font-size: 1.1rem;
+      font-weight: 900;
+      color: var(--white);
+      letter-spacing: 1px;
+    }
+    .nav-logo span { color: var(--gold); }
+    .nav-wa {
+      background: #25D366;
+      color: var(--white);
+      font-size: 0.88rem;
+      font-weight: 800;
+      padding: 9px 18px;
+      border-radius: 28px;
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      white-space: nowrap;
+    }
+    .nav-wa svg { width: 17px; height: 17px; flex-shrink: 0; }
+
+    /* ── Urgency ── */
+    .urgency {
+      background: var(--gold);
+      color: var(--dark);
+      text-align: center;
+      padding: 11px 20px;
+      font-size: 0.9rem;
+      font-weight: 800;
+    }
+
+    /* ── Hero ── */
+    .hero {
+      position: relative;
+      min-height: 520px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: var(--white);
+      overflow: hidden;
+    }
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background-image: url('img-hero.jpg');
+      background-size: cover;
+      background-position: center top;
+    }
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(160deg, rgba(26,26,46,0.90) 0%, rgba(44,44,80,0.85) 100%);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      padding: 60px 22px;
+      width: 100%;
+    }
+    .hero-eyebrow {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--dark);
+      font-size: 0.85rem;
+      font-weight: 800;
+      padding: 6px 16px;
+      border-radius: 20px;
+      margin-bottom: 22px;
+      letter-spacing: 1px;
+    }
+    .hero h1 {
+      font-size: clamp(2rem, 7vw, 3rem);
+      font-weight: 900;
+      line-height: 1.2;
+      margin-bottom: 18px;
+    }
+    .hero h1 em {
+      color: var(--gold);
+      font-style: normal;
+    }
+    .hero-desc {
+      font-size: 1.1rem;
+      color: rgba(255,255,255,0.82);
+      max-width: 540px;
+      margin: 0 auto 32px;
+      line-height: 1.7;
+    }
+    .hero-stats {
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      flex-wrap: wrap;
+      margin-bottom: 36px;
+    }
+    .stat-item { text-align: center; }
+    .stat-num {
+      font-size: 2.4rem;
+      font-weight: 900;
+      color: var(--gold);
+      line-height: 1;
+    }
+    .stat-label {
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.65);
+      margin-top: 5px;
+    }
+    .hero-cta-group {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 14px;
+    }
+    .btn-wa {
+      background: #25D366;
+      color: var(--white);
+      font-size: 1.05rem;
+      font-weight: 800;
+      padding: 16px 34px;
+      border-radius: 36px;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 4px 20px rgba(37,211,102,0.40);
+    }
+    .btn-wa svg { width: 24px; height: 24px; }
+    .btn-secondary {
+      color: rgba(255,255,255,0.65);
+      font-size: 0.92rem;
+      border-bottom: 1px dashed rgba(255,255,255,0.35);
+      padding-bottom: 2px;
+    }
+
+    /* ── Photo Strip ── */
+    .photo-strip {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      height: 220px;
+      gap: 0;
+    }
+    .photo-strip-item {
+      position: relative;
+      overflow: hidden;
+    }
+    .photo-strip-item img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+    .photo-strip-item:hover img { transform: scale(1.05); }
+    .photo-strip-caption {
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      background: linear-gradient(transparent, rgba(26,26,46,0.80));
+      color: var(--white);
+      font-size: 0.82rem;
+      font-weight: 700;
+      padding: 20px 14px 12px;
+      text-align: center;
+    }
+    @media (max-width: 480px) {
+      .photo-strip { height: 160px; }
+      .photo-strip-caption { font-size: 0.75rem; }
+    }
+
+    /* ── Pain ── */
+    .pain { background: var(--cream); }
+    .pain-list { display: flex; flex-direction: column; gap: 14px; }
+    .pain-item {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 20px 22px;
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+    }
+    .pain-icon { font-size: 1.7rem; flex-shrink: 0; margin-top: 2px; }
+    .pain-item strong {
+      display: block;
+      font-weight: 800;
+      margin-bottom: 5px;
+      color: var(--dark);
+      font-size: 1rem;
+    }
+    .pain-item p { font-size: 0.95rem; color: var(--muted); }
+    .pain-answer {
+      background: linear-gradient(135deg, var(--dark), #2C2C4A);
+      color: var(--white);
+      border-radius: var(--radius);
+      padding: 28px;
+      margin-top: 30px;
+      text-align: center;
+    }
+    .pain-answer p { font-size: 1.1rem; line-height: 1.65; }
+    .pain-answer strong { color: var(--gold); }
+
+    /* ── Why Us ── */
+    .why-section { background: var(--white); }
+    .why-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+    @media (max-width: 500px) { .why-inner { grid-template-columns: 1fr; } }
+    .why-card {
+      background: var(--cream);
+      border-radius: var(--radius);
+      padding: 24px 20px;
+      text-align: center;
+    }
+    .why-icon { font-size: 2.2rem; margin-bottom: 12px; }
+    .why-card h3 { font-size: 1rem; font-weight: 800; margin-bottom: 8px; color: var(--dark); }
+    .why-card p { font-size: 0.92rem; color: var(--muted); line-height: 1.6; }
+
+    /* ── Image Banner ── */
+    .img-banner {
+      position: relative;
+      height: 280px;
+      overflow: hidden;
+    }
+    .img-banner img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      object-position: center 30%;
+    }
+    .img-banner-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to right, rgba(26,26,46,0.75) 0%, rgba(26,26,46,0.20) 100%);
+      display: flex;
+      align-items: center;
+      padding: 0 40px;
+    }
+    .img-banner-text { color: var(--white); max-width: 420px; }
+    .img-banner-text h2 {
+      font-size: 1.8rem;
+      font-weight: 900;
+      line-height: 1.3;
+      margin-bottom: 10px;
+    }
+    .img-banner-text h2 em { color: var(--gold); font-style: normal; }
+    .img-banner-text p { font-size: 0.95rem; opacity: 0.85; }
+    @media (max-width: 540px) {
+      .img-banner { height: 220px; }
+      .img-banner-overlay { padding: 0 24px; }
+      .img-banner-text h2 { font-size: 1.4rem; }
+    }
+
+    /* ── Branch Tabs ── */
+    .branches { background: var(--cream); }
+    .tab-bar {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 26px;
+      background: var(--white);
+      border-radius: 40px;
+      padding: 6px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    }
+    .tab-btn {
+      flex: 1;
+      padding: 13px 8px;
+      border-radius: 36px;
+      border: none;
+      background: transparent;
+      font-weight: 800;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: all 0.2s;
+      color: var(--muted);
+    }
+    .tab-btn.active {
+      background: var(--dark);
+      color: var(--white);
+      box-shadow: 0 3px 12px rgba(0,0,0,0.18);
+    }
+    .branch-panel { display: none; }
+    .branch-panel.active { display: block; }
+
+    .branch-header {
+      border-radius: var(--radius);
+      padding: 22px;
+      margin-bottom: 20px;
+      color: var(--white);
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .branch-header.baili { background: linear-gradient(135deg, #C0392B, #E05A45); }
+    .branch-header.gaoya { background: linear-gradient(135deg, #1A6B8A, #2196B0); }
+    .branch-header-icon { font-size: 2.2rem; }
+    .branch-header h3 { font-size: 1.2rem; font-weight: 900; }
+    .branch-header p { font-size: 0.88rem; opacity: 0.85; margin-top: 4px; }
+
+    .level-block { margin-bottom: 12px; }
+    .level-header {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 18px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      font-weight: 800;
+      font-size: 1rem;
+      color: var(--dark);
+      border: 1.5px solid var(--border);
+      user-select: none;
+    }
+    .level-header:hover { border-color: var(--gold); }
+    .level-header .chevron {
+      transition: transform 0.25s;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+    .level-header.open .chevron { transform: rotate(180deg); }
+    .level-body {
+      display: none;
+      background: var(--white);
+      border: 1.5px solid var(--border);
+      border-top: none;
+      border-radius: 0 0 var(--radius) var(--radius);
+      overflow: hidden;
+    }
+    .level-body.open { display: block; }
+
+    .course-row {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+      padding: 16px 20px;
+      border-bottom: 1px solid #F2EDE8;
+      gap: 14px;
+    }
+    .course-row:last-child { border-bottom: none; }
+    .course-name { font-weight: 800; font-size: 1rem; margin-bottom: 4px; }
+    .course-meta { font-size: 0.85rem; color: var(--muted); line-height: 1.5; }
+    .course-badge {
+      font-size: 0.78rem;
+      font-weight: 700;
+      padding: 5px 12px;
+      border-radius: 20px;
+      white-space: nowrap;
+      text-align: center;
+    }
+    .badge-online  { background: #EBF8F0; color: #1A8A50; }
+    .badge-both    { background: #EBF2FB; color: #1A4F8A; }
+    .badge-onsite  { background: #FFF0E8; color: #8A4A1A; }
+
+    /* ── Teachers ── */
+    .teachers-section { background: var(--white); }
+    .teachers-intro {
+      position: relative;
+      border-radius: var(--radius);
+      overflow: hidden;
+      margin-bottom: 36px;
+      height: 200px;
+    }
+    .teachers-intro img { width: 100%; height: 100%; object-fit: cover; object-position: center 40%; }
+    .teachers-intro-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to right, rgba(26,26,46,0.82) 40%, rgba(26,26,46,0.30) 100%);
+      display: flex;
+      align-items: center;
+      padding: 0 30px;
+    }
+    .teachers-intro-text { color: var(--white); }
+    .teachers-intro-text h3 {
+      font-size: 1.4rem;
+      font-weight: 900;
+      margin-bottom: 6px;
+    }
+    .teachers-intro-text p { font-size: 0.92rem; opacity: 0.85; }
+
+    .teachers-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+      gap: 16px;
+    }
+    .teacher-card {
+      background: var(--white);
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px 16px;
+      text-align: center;
+      transition: box-shadow 0.2s, border-color 0.2s;
+    }
+    .teacher-card:hover {
+      box-shadow: var(--shadow);
+      border-color: var(--gold);
+    }
+    .teacher-avatar {
+      width: 64px; height: 64px;
+      border-radius: 50%;
+      margin: 0 auto 12px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.5rem; font-weight: 900; color: var(--white);
+    }
+    .av-red    { background: linear-gradient(135deg, #C0392B, #E05A45); }
+    .av-blue   { background: linear-gradient(135deg, #1A6B8A, #2196B0); }
+    .av-green  { background: linear-gradient(135deg, #1A8A50, #28B065); }
+    .av-gold   { background: linear-gradient(135deg, #8A6A1A, #C09A28); }
+    .av-purple { background: linear-gradient(135deg, #5A1A8A, #8A2DB0); }
+    .av-teal   { background: linear-gradient(135deg, #0B7A6E, #12A898); }
+    .av-navy   { background: linear-gradient(135deg, #1A2B8A, #2D45C0); }
+    .av-rose   { background: linear-gradient(135deg, #8A1A4A, #C02870); }
+
+    .teacher-name { font-size: 0.95rem; font-weight: 800; margin-bottom: 6px; }
+    .teacher-subject {
+      display: inline-block;
+      background: var(--cream);
+      color: var(--red);
+      font-size: 0.75rem;
+      font-weight: 800;
+      padding: 3px 10px;
+      border-radius: 12px;
+      margin-bottom: 10px;
+    }
+    .teacher-creds { font-size: 0.8rem; color: var(--muted); line-height: 1.5; }
+    .award { color: var(--gold); }
+
+    /* ── Mid CTA ── */
+    .mid-cta {
+      background: linear-gradient(135deg, var(--red), #E05A45);
+      color: var(--white);
+      text-align: center;
+      padding: 56px 22px;
+    }
+    .mid-cta h2 { font-size: 1.7rem; font-weight: 900; margin-bottom: 12px; line-height: 1.3; }
+    .mid-cta p { opacity: 0.88; margin-bottom: 28px; font-size: 1rem; }
+    .btn-wa-white {
+      background: var(--white);
+      color: var(--red);
+      font-size: 1.05rem;
+      font-weight: 800;
+      padding: 16px 32px;
+      border-radius: 36px;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.18);
+    }
+    .btn-wa-white svg { width: 22px; height: 22px; }
+
+    /* ── Testimonials ── */
+    .testimonials { background: var(--cream); }
+    .testi-grid { display: flex; flex-direction: column; gap: 16px; }
+    .testi-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 24px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+      position: relative;
+    }
+    .testi-quote {
+      position: absolute;
+      top: 10px; left: 18px;
+      font-size: 3.5rem;
+      color: var(--gold);
+      opacity: 0.25;
+      line-height: 1;
+      font-family: Georgia, serif;
+    }
+    .testi-text {
+      font-size: 0.98rem;
+      line-height: 1.7;
+      color: var(--mid);
+      padding-top: 12px;
+    }
+    .testi-author {
+      margin-top: 14px;
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--muted);
+    }
+    .testi-author span { color: var(--red); }
+
+    /* ── FAQ ── */
+    .faq-section { background: var(--white); }
+    .faq-list { display: flex; flex-direction: column; gap: 10px; }
+    .faq-item {
+      background: var(--white);
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+    .faq-q {
+      padding: 18px 20px;
+      font-weight: 800;
+      font-size: 1rem;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      user-select: none;
+    }
+    .faq-q .faq-chevron { transition: transform 0.25s; flex-shrink: 0; color: var(--muted); font-size: 0.88rem; }
+    .faq-q.open .faq-chevron { transform: rotate(180deg); }
+    .faq-a {
+      display: none;
+      padding: 16px 20px;
+      font-size: 0.95rem;
+      color: var(--muted);
+      line-height: 1.7;
+      border-top: 1px solid var(--border);
+    }
+    .faq-a.open { display: block; }
+
+    /* ── Final CTA ── */
+    .final-cta {
+      position: relative;
+      color: var(--white);
+      text-align: center;
+      padding: 0;
+      overflow: hidden;
+    }
+    .final-cta-bg {
+      position: absolute;
+      inset: 0;
+      background-image: url('img-hero.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+    .final-cta-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(160deg, rgba(26,26,46,0.93) 0%, rgba(44,44,80,0.90) 100%);
+    }
+    .final-cta-content {
+      position: relative;
+      z-index: 2;
+      padding: 68px 22px;
+    }
+    .final-cta .tag { margin-bottom: 20px; }
+    .final-cta h2 {
+      font-size: clamp(1.6rem, 5vw, 2.2rem);
+      font-weight: 900;
+      margin-bottom: 14px;
+      line-height: 1.3;
+    }
+    .final-cta h2 em { color: var(--gold); font-style: normal; }
+    .final-cta p { color: rgba(255,255,255,0.72); margin-bottom: 32px; font-size: 1rem; }
+    .final-wa {
+      background: #25D366;
+      color: var(--white);
+      font-size: 1.1rem;
+      font-weight: 800;
+      padding: 18px 36px;
+      border-radius: 36px;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 4px 24px rgba(37,211,102,0.45);
+      margin-bottom: 22px;
+    }
+    .final-wa svg { width: 26px; height: 26px; }
+    .contact-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 22px;
+      margin-top: 30px;
+    }
+    .contact-item {
+      font-size: 0.88rem;
+      color: rgba(255,255,255,0.62);
+      display: flex;
+      align-items: center;
+      gap: 7px;
+    }
+    .contact-item strong { color: rgba(255,255,255,0.88); }
+
+    /* ── Footer ── */
+    footer {
+      background: #111;
+      color: rgba(255,255,255,0.38);
+      text-align: center;
+      padding: 20px;
+      font-size: 0.82rem;
+    }
+
+    /* ── Floating WA ── */
+    .float-wa {
+      position: fixed;
+      bottom: 24px; right: 22px;
+      z-index: 998;
+      background: #25D366;
+      color: var(--white);
+      width: 62px; height: 62px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 20px rgba(37,211,102,0.55);
+    }
+    .float-wa svg { width: 32px; height: 32px; }
+
+    /* ── Fade In ── */
+    @media (prefers-reduced-motion: no-preference) {
+      .fade-in {
+        opacity: 0;
+        transform: translateY(28px);
+        transition: opacity 0.55s ease, transform 0.55s ease;
+      }
+      .fade-in.visible { opacity: 1; transform: none; }
+    }
+
+    /* ── WA SVG shorthand ── */
+    .wa-icon path {
+      fill: currentColor;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Floating WhatsApp -->
+<a class="float-wa" href="https://wa.me/60166760079?text=您好，我想了解弘文馆中学补习课程" target="_blank" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<!-- Urgency Banner -->
+<div class="urgency">🔔 2026 年课程已开课 · 名额有限，现在报名还来得及！</div>
+
+<!-- Nav -->
+<nav>
+  <div class="nav-logo">弘文馆<span>教育中心</span></div>
+  <a class="nav-wa" href="https://wa.me/60166760079?text=您好，我想了解弘文馆中学补习课程" target="_blank">
+    <svg viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    立即询问
+  </a>
+</nav>
+
+<!-- ═══ HERO ═══ -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content container">
+    <div class="hero-eyebrow">📚 2026 中学补习班 · 现正招生</div>
+    <h1>
+      不只是补习，<br>
+      是<em>真正懂宽中</em>的老师
+    </h1>
+    <p class="hero-desc">
+      多位曾任宽柔中学导师、获选优秀教师奖的班底师资，<br>
+      初一到高三，实体＋线上灵活上课。
+    </p>
+    <div class="hero-stats">
+      <div class="stat-item">
+        <div class="stat-num">20<small style="font-size:1.2rem">+</small></div>
+        <div class="stat-label">核心师资教学年</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">6</div>
+        <div class="stat-label">初高中年级</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">2</div>
+        <div class="stat-label">分院地点</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">7</div>
+        <div class="stat-label">开设科目</div>
+      </div>
+    </div>
+    <div class="hero-cta-group">
+      <a class="btn-wa" href="https://wa.me/60166760079?text=您好，我想了解弘文馆2026中学补习课程" target="_blank">
+        <svg viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        WhatsApp 询问报名
+      </a>
+      <a class="btn-secondary" href="#courses">查看课程时间表 ↓</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ PHOTO STRIP ═══ -->
+<div class="photo-strip">
+  <div class="photo-strip-item">
+    <img src="img-classroom.jpg" alt="实体课堂" loading="lazy" />
+    <div class="photo-strip-caption">🏫 实体课堂互动</div>
+  </div>
+  <div class="photo-strip-item">
+    <img src="img-online.jpg" alt="线上学习" loading="lazy" />
+    <div class="photo-strip-caption">💻 线上课程直播</div>
+  </div>
+  <div class="photo-strip-item">
+    <img src="img-study.jpg" alt="认真备考" loading="lazy" />
+    <div class="photo-strip-caption">📖 专注备考冲刺</div>
+  </div>
+</div>
+
+<!-- ═══ PAIN ═══ -->
+<section class="section pain fade-in">
+  <div class="container">
+    <div class="section-title">是不是有这样的烦恼？</div>
+    <div class="section-sub">很多宽中家长都跟我们说过同样的话……</div>
+    <div class="pain-list">
+      <div class="pain-item">
+        <div class="pain-icon">😰</div>
+        <div>
+          <strong>「孩子升上宽中，功课突然跟不上了」</strong>
+          <p>课程难度跳升很大，单靠学校时间根本不够消化。</p>
+        </div>
+      </div>
+      <div class="pain-item">
+        <div class="pain-icon">🤔</div>
+        <div>
+          <strong>「补习老师不懂宽中课程，教的不一样」</strong>
+          <p>宽中有自己的教材体系，不是所有补习老师都摸熟。</p>
+        </div>
+      </div>
+      <div class="pain-item">
+        <div class="pain-icon">😓</div>
+        <div>
+          <strong>「孩子功课交不出来，每天回家就一个头痛」</strong>
+          <p>家长想帮也帮不上，老师一打电话过来，心就沉一下。</p>
+        </div>
+      </div>
+      <div class="pain-item">
+        <div class="pain-icon">😤</div>
+        <div>
+          <strong>「换了好几间补习班，成绩还是没起色」</strong>
+          <p>钱花出去了，孩子时间也搭进去了，就是看不到效果。</p>
+        </div>
+      </div>
+    </div>
+    <div class="pain-answer">
+      <p>弘文馆的中学班，<strong>由曾在宽柔中学任教的老师带路</strong>，<br>
+      教的是宽中那一套，用的是宽中那一本书。<br>
+      孩子不再觉得补习是在上一门陌生的课。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ IMAGE BANNER 1 ═══ -->
+<div class="img-banner fade-in">
+  <img src="img-teacher-red.jpg" alt="课室学习" loading="lazy" />
+  <div class="img-banner-overlay">
+    <div class="img-banner-text">
+      <h2>从<em>跟不上</em>，<br>到主动做功课</h2>
+      <p>专科专教 · 宽中课程对版 · 步步扎实</p>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ WHY US ═══ -->
+<section class="section why-section fade-in">
+  <div class="container">
+    <div class="section-title">为什么选弘文馆？</div>
+    <div class="section-sub">四个家长最在乎的理由</div>
+    <div class="why-inner">
+      <div class="why-card">
+        <div class="why-icon">🏆</div>
+        <h3>宽中班底师资</h3>
+        <p>多位老师曾任宽柔中学导师，深知宽中出题方向与评分标准。</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">📱</div>
+        <h3>实体＋线上双轨</h3>
+        <p>下雨天、家远？可以选线上课。喜欢面对面互动？来实体班。灵活切换。</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">🎯</div>
+        <h3>专科专教</h3>
+        <p>数学、国文、英文、科学、物理、华文、会计——各科由专门老师负责。</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">📍</div>
+        <h3>两个地点方便接送</h3>
+        <p>百合总院＆高雅分院，新山两区都有据点，接送不用绕远路。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ COURSES ═══ -->
+<section class="section branches fade-in" id="courses">
+  <div class="container">
+    <div class="section-title">2026 中学课程时间表</div>
+    <div class="section-sub">点击分院查看课程 · 初一到高三全覆盖</div>
+
+    <div class="tab-bar">
+      <button class="tab-btn active" onclick="switchBranch('baili', this)">🏫 百合总院</button>
+      <button class="tab-btn" onclick="switchBranch('gaoya', this)">🏫 高雅分院</button>
+    </div>
+
+    <!-- ── BAILI ── -->
+    <div class="branch-panel active" id="branch-baili">
+      <div class="branch-header baili">
+        <div class="branch-header-icon">🏫</div>
+        <div>
+          <h3>百合总院</h3>
+          <p>实体·线上双轨 · 部分科目仅线上</p>
+        </div>
+      </div>
+
+      <div class="level-block">
+        <div class="level-header" onclick="toggleLevel(this)">
+          <span>📗 初一（Form 1）</span><span class="chevron">▼</span>
+        </div>
+        <div class="level-body">
+          <div class="course-row">
+            <div><div class="course-name">国文（BM）</div><div class="course-meta">至宽＋新宽 · 星期二 7:15–9:00pm · Cikgu Lim</div></div>
+            <span class="course-badge badge-both">实体／线上</span>
+          </div>
+          <div class="course-row">
+            <div><div class="course-name">华文</div><div class="course-meta">国中、宽中、国际、新加坡 · 星期三 7:45–9:15pm · 林丽丹师</div></div>
+            <span class="course-badge badge-online">仅线上</span>
+          </div>
+          <div class="course-row">
+            <div><div class="course-name">科学（Sains）</div><div class="course-meta">至宽＋新宽 · 星期四 7:00–8:45pm · 施老师</div></div>
+            <span class="course-badge badge-both">实体／线上</span>
+          </div>
+          <div class="course-row">
+            <div><div class="course-name">数学 B 组</div><div class="course-meta">至宽＋新宽 · 星期六 12:45–2:30pm · 王应瑛师</div></div>
+            <span class="course-badge badge-both">实体／线上</span>
+          </div>
+          <div class="course-row">
+            <div><div class="course-name">英文（English）</div><div class="course-meta">至宽＋新宽 · 星期六 2:45–4:30pm · Mr See</div></div>
+            <span class="course-badge badge-both">实体／线上</span>
+          </div>
+          <div class="course-row">
+            <div><div class="course-name">数学 A 组</div><div class="course-meta">至宽＋新宽 · 星期六 4:45–6:30pm · 王应瑛师</div></div>
+            <span class="course-badge badge-both">实体／线上</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="level-block">
+        <div class="level-header" onclick="toggleLevel(this)">
+          <span>📘 初二（Form 2）</span><span class="chevron">▼</span>
+        </div>
+        <div class="level-body">
+          <div class="course-row">
+            <div><div class="course-name">华文</div><div class="course-meta">国中、宽中、国际、新加坡 · 星期四 7:30–9:00pm · 刘老师</div></div>
+            <span class="course-badge badge-online">仅线上</span>
+          </div>
+          <div class="course-row">
+            <div><div class="course-name">国文（BM）</div><div class="course-meta">至宽＋新宽 · 星期五 7:30–9:15pm · Cikgu Lim</div></div>
+            <span class="course-badge badge-online">仅线上</span>
+          </div>
+          <div class="course-row">
+            <div><div class="course-name">华文（彦丰师班）</div><div class="course-meta">国中、宽中、国际、新加坡 · 星期五 7:45–9:15pm · 陈彦丰师</div></div>
+            <span class="course-badge badge-online">仅线上</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="level-block">
+        <div class="level-header" onclick="toggleLevel(this)">
+          <span>📙 初三（Form 3）</span><span class="chevron">▼</span>
+        </div>
+        <div class="level-body">
+          <div class="course-row">
+            <div><div class="course-name">华文</div><div class="course-meta">国中、宽中、国际、新加坡 · 星期五 7:30–9:00pm · 刘老师</div></div>
+            <span class="course-badge badge-online">仅线上</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="level-block">
+        <div class="level-header" onclick="toggleLevel(this)">
+          <span>📕 高一（Form 4）</span><span class="chevron">▼</span>
+        </div>
+        <div class="level-body">
+          <div class="course-row">
+            <div><div class="course-name">数学（文商组）</div><div class="course-meta">至宽＋新宽 · 星期三 7:00–8:45pm · 王应瑛师</div></div>
+            <span class="course-badge badge-both">实体／线上</span>
+          </div>
+          <div class="course-row">
+            <div><div class="course-name">国文（BM）</div><div class="course-meta">至宽＋新宽 · 星期四 7:00–8:45pm · Cikgu Lim</div></div>
+            <span class="course-badge badge-both">实体／线上</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="level-block">
+        <div class="level-header" onclick="toggleLevel(this)">
+          <span>📔 高二（Form 5 · SPM）</span><span class="chevron">▼</span>
+        </div>
+        <div class="level-body">
+          <div class="course-row">
+            <div><div class="course-name">华文</div><div class="course-meta">国中、宽中、国际、新加坡 · 星期四 7:30–9:00pm · 黄淑珍师</div></div>
+            <span class="course-badge badge-online">仅线上</span>
+          </div>
+        </div>
+      </div>
+
+      <p style="text-align:center;color:var(--muted);font-size:0.85rem;margin-top:18px;">
+        ＊ 新生注册费 RM30 · 杂费 RM50／科（全年一次性）
+      </p>
+    </div>
+
+    <!-- ── GAOYA ── -->
+    <div class="branch-panel" id="branch-gaoya">
+      <div class="branch-header gaoya">
+        <div class="branch-header-icon">🏫</div>
+        <div>
+          <h3>高雅分院</h3>
+          <p>实体·线上双轨 · 科目最齐全</p>
+        </div>
+      </div>
+
+      <div class="level-block">
+        <div class="level-header" onclick="toggleLevel(this)">
+          <span>📗 初一（Form 1）</span><span class="chevron">▼</span>
+        </div>
+        <div class="level-body">
+          <div class="course-row">
+            <div><div class="course-name">国文（BM）</div><div class="course-meta">至宽 · 星期一 7:00–8:45pm · Cikgu Teo</div></div>
+            <span class="course-badge badge-both">实体／线上</span>
+          </div>
+          <div class="course-row">
+            <div><div class="course-name">数学 A 组</div><div class="course-meta">至宽＋新宽 · 星期三 7:00–8:45pm · 杨莉莉师</div></div>
+            <span class="course-badge badge-both">实体／线上</span>
+          </div>
+          <div class="course-row">
+            <div><div class="course-name">英文（English）</div><div class="course-meta">至宽＋新宽 · 星期四 7:00–8:45pm · Mr See</div></div>
+            <span class="course-badge badge-both">实体／线上</span>
+          </div>
+          <div class="course-row">
+            <div><div class="course-name">科学（Sains）</div><div class="course-meta">至宽＋新宽 · 星期五 7:15–9:00pm · 施老师</div></div>
+            <span class="course-badge badge-both">实体／线上</span>
+          </div>
+          <div class="course-row">
+            <div><div class="course-name">英文（Miss Lee 班）</div><div class="course-meta">至宽 · 星期六 3:45–5:30pm · Miss Lee</div></div>
+            <span class="course-badge badge-both">实体／线上</span>
+          </div>
+          <div class="course-row">
+            <div><div class="course-name">数学 B 组</div><div class="course-meta">至宽＋新宽 · 星期天 9:00–10:45am · 陈宝婷师</div></div>
+            <span class="course-badge badge-both">实体／线上</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="level-block">
+        <div class="level-header" onclick="toggleLevel(this)">
+          <span>📘 初二（Form 2）</span><span class="chevron">▼</span>
+        </div>
+        <div class="level-body">
+          <div class="course-row">
+            <div><div class="course-name">数学 A 组</div><div class="course-meta">至宽＋新宽 · 星期二 7:00–9:00pm · 杨莉莉师</div></div>
+            <span class="course-badge badge-both">实体／线上</span>
+          </div>
+          <div class="course-row">
+            <div><div class="course-name">数学 B 组</div><div class="course-meta">至宽＋新宽 · 星期二 7:00–8:45pm · 陈宝婷师</div></div>
+            <span class="course-badge badge-both">实体／线上</span>
+          </div>
+          <div class="course-row">
+            <div><div class="course-name">国文（BM）</div><div class="course-meta">至宽 · 星期四 7:00–8:45pm · Cikgu Teo</div></div>
+            <span class="course-badge badge-both">实体／线上</span>
+          </div>
+          <div class="course-row">
+            <div><div class="course-name">英文（English）</div><div class="course-meta">至宽 · 星期五 7:15–9:00pm · Miss Lee</div></div>
+            <span class="course-badge badge-both">实体／线上</span>
+          </div>
+          <div class="course-row">
+            <div><div class="course-name">科学（Sains）</div><div class="course-meta">至宽＋新宽 · 星期天 9:00–10:45am · Ray Chin</div></div>
+            <span class="course-badge badge-both">实体／线上</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="level-block">
+        <div class="level-header" onclick="toggleLevel(this)">
+          <span>📙 初三（Form 3）</span><span class="chevron">▼</span>
+        </div>
+        <div class="level-body">
+          <div class="course-row">
+            <div><div class="course-name">国文—新宽（BM）</div><div class="course-meta">新宽 · 星期一 7:15–9:00pm · Cikgu Lim</div></div>
+            <span class="course-badge badge-online">仅线上</span>
+          </div>
+          <div class="course-row">
+            <div><div class="course-name">英文（English）</div><div class="course-meta">至宽 · 星期一 7:00–8:45pm · Miss Lee</div></div>
+            <span class="course-badge badge-both">实体／线上</span>
+          </div>
+          <div class="course-row">
+            <div><div class="course-name">国文—至宽（BM）</div><div class="course-meta">至宽 · 星期二 7:00–8:45pm · Cikgu Teo</div></div>
+            <span class="course-badge badge-both">实体／线上</span>
+          </div>
+          <div class="course-row">
+            <div><div class="course-name">数学 A 组</div><div class="course-meta">至宽＋新宽 · 星期四 7:00–8:45pm · 傅信县师</div></div>
+            <span class="course-badge badge-both">实体／线上</span>
+          </div>
+          <div class="course-row">
+            <div><div class="course-name">数学 B 组</div><div class="course-meta">至宽＋新宽 · 星期四 7:00–8:45pm · 陈宝婷师</div></div>
+            <span class="course-badge badge-both">实体／线上</span>
+          </div>
+          <div class="course-row">
+            <div><div class="course-name">科学（Sains）</div><div class="course-meta">至宽＋新宽 · 星期天 2:00–3:45pm · Ray Chin</div></div>
+            <span class="course-badge badge-both">实体／线上</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="level-block">
+        <div class="level-header" onclick="toggleLevel(this)">
+          <span>📕 高一（Form 4）</span><span class="chevron">▼</span>
+        </div>
+        <div class="level-body">
+          <div class="course-row">
+            <div><div class="course-name">数学（理科组）</div><div class="course-meta">至宽＋新宽 · 星期一 7:00–9:00pm · 杨莉莉师</div></div>
+            <span class="course-badge badge-both">实体／线上</span>
+          </div>
+          <div class="course-row">
+            <div><div class="course-name">英文—新宽（English）</div><div class="course-meta">新宽 · 星期二 7:00–8:45pm · Miss Kang</div></div>
+            <span class="course-badge badge-both">实体／线上</span>
+          </div>
+          <div class="course-row">
+            <div><div class="course-name">国文—至宽（BM）</div><div class="course-meta">至宽 · 星期三 7:00–8:45pm · Cikgu Teo</div></div>
+            <span class="course-badge badge-both">实体／线上</span>
+          </div>
+          <div class="course-row">
+            <div><div class="course-name">英文—至宽（English）</div><div class="course-meta">至宽 · 星期四 7:00–8:45pm · Miss Lee</div></div>
+            <span class="course-badge badge-both">实体／线上</span>
+          </div>
+          <div class="course-row">
+            <div><div class="course-name">数学（文商组）</div><div class="course-meta">至宽＋新宽 · 星期五 7:30–9:15pm · 陈宝婷师</div></div>
+            <span class="course-badge badge-both">实体／线上</span>
+          </div>
+          <div class="course-row">
+            <div><div class="course-name">物理（Physics）</div><div class="course-meta">至宽＋新宽 · 星期六 1:45–3:30pm · 吴老师</div></div>
+            <span class="course-badge badge-onsite">仅实体</span>
+          </div>
+          <div class="course-row">
+            <div><div class="course-name">会计（文商组）</div><div class="course-meta">至宽＋新宽 · 星期天 11:00am–12:45pm · 刘世鸿师</div></div>
+            <span class="course-badge badge-both">实体／线上</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="level-block">
+        <div class="level-header" onclick="toggleLevel(this)">
+          <span>📔 高二（Form 5 · SPM）</span><span class="chevron">▼</span>
+        </div>
+        <div class="level-body">
+          <div class="course-row">
+            <div><div class="course-name">国文 SPM（线上班）</div><div class="course-meta">至宽＋新宽 · 星期一 7:00–8:30pm · Cikgu Chow</div></div>
+            <span class="course-badge badge-online">仅线上</span>
+          </div>
+          <div class="course-row">
+            <div><div class="course-name">国文 SPM（实体班）</div><div class="course-meta">至宽＋新宽 · 星期二 7:00–8:30pm · Cikgu Chow</div></div>
+            <span class="course-badge badge-onsite">仅实体</span>
+          </div>
+          <div class="course-row">
+            <div><div class="course-name">英文—至宽（English）</div><div class="course-meta">至宽 · 星期三 7:15–9:00pm · Miss Kang</div></div>
+            <span class="course-badge badge-both">实体／线上</span>
+          </div>
+          <div class="course-row">
+            <div><div class="course-name">英文—新宽（English）</div><div class="course-meta">新宽 · 星期四 7:30–9:15pm · Miss Kang</div></div>
+            <span class="course-badge badge-online">仅线上</span>
+          </div>
+          <div class="course-row">
+            <div><div class="course-name">数学（理科组）</div><div class="course-meta">至宽＋新宽 · 星期五 7:30–9:30pm · 杨莉莉师</div></div>
+            <span class="course-badge badge-both">实体／线上</span>
+          </div>
+          <div class="course-row">
+            <div><div class="course-name">数学（文商组）</div><div class="course-meta">至宽＋新宽 · 星期天 11:00am–12:45pm · 陈宝婷师</div></div>
+            <span class="course-badge badge-both">实体／线上</span>
+          </div>
+          <div class="course-row">
+            <div><div class="course-name">物理（Physics）</div><div class="course-meta">至宽 · 星期天 11:00am–1:00pm · Ray Chin</div></div>
+            <span class="course-badge badge-both">实体／线上</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="level-block">
+        <div class="level-header" onclick="toggleLevel(this)">
+          <span>🎓 高三（Form 6 · STPM）</span><span class="chevron">▼</span>
+        </div>
+        <div class="level-body">
+          <div class="course-row">
+            <div><div class="course-name">英文（English）</div><div class="course-meta">以新宽课程为主 · 星期一 7:00–8:45pm · Miss Kang</div></div>
+            <span class="course-badge badge-both">实体／线上</span>
+          </div>
+          <div class="course-row">
+            <div><div class="course-name">数学（理科）—至宽</div><div class="course-meta">至宽 · 星期三 7:00–9:00pm · 傅信县师</div></div>
+            <span class="course-badge badge-both">实体／线上</span>
+          </div>
+          <div class="course-row">
+            <div><div class="course-name">数学（文商）</div><div class="course-meta">至宽＋新宽 · 星期三 7:15–9:00pm · 陈宝婷师</div></div>
+            <span class="course-badge badge-both">实体／线上</span>
+          </div>
+          <div class="course-row">
+            <div><div class="course-name">数学（理科）—新宽</div><div class="course-meta">新宽 · 星期六 10:00am–12:00pm · 杨莉莉师</div></div>
+            <span class="course-badge badge-online">仅线上</span>
+          </div>
+          <div class="course-row">
+            <div><div class="course-name">会计（文商）</div><div class="course-meta">至宽＋新宽 · 星期天 9:00–10:45am · 刘世鸿老师</div></div>
+            <span class="course-badge badge-both">实体／线上</span>
+          </div>
+        </div>
+      </div>
+
+      <p style="text-align:center;color:var(--muted);font-size:0.85rem;margin-top:18px;">
+        ＊ 新生注册费 RM30 · 杂费 RM50／科（全年一次性）
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ TEACHERS ═══ -->
+<section class="section teachers-section fade-in">
+  <div class="container">
+    <div class="section-title">认识我们的老师</div>
+    <div class="section-sub">每一位都经过认真筛选——资历、专业、热情，三者兼备</div>
+
+    <div class="teachers-intro">
+      <img src="img-teacher-class.jpg" alt="老师教学" loading="lazy" />
+      <div class="teachers-intro-overlay">
+        <div class="teachers-intro-text">
+          <h3>宽中班底，<br>专科专教</h3>
+          <p>多位曾直接任职宽柔中学，获优秀教师奖</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="teachers-grid">
+      <div class="teacher-card">
+        <div class="teacher-avatar av-gold">杨</div>
+        <div class="teacher-name">杨莉莉老师</div>
+        <div class="teacher-subject">数学</div>
+        <div class="teacher-creds">台湾台大财金系毕业<br>曾任宽中数学科导师<br><span class="award">🏅 获选优秀教师奖</span><br>20 年教学经验</div>
+      </div>
+      <div class="teacher-card">
+        <div class="teacher-avatar av-blue">Teo</div>
+        <div class="teacher-name">Cikgu Teo</div>
+        <div class="teacher-subject">国文 BM</div>
+        <div class="teacher-creds">曾任宽柔中学国文科主任<br><span class="award">🏅 获选优秀教师奖</span><br>20 年以上教学经验</div>
+      </div>
+      <div class="teacher-card">
+        <div class="teacher-avatar av-rose">Lee</div>
+        <div class="teacher-name">Miss Lee</div>
+        <div class="teacher-subject">英文</div>
+        <div class="teacher-creds">台湾台大外文系毕业<br>曾任宽中英文科导师<br><span class="award">🏅 获选优秀教师奖</span><br>20 年教学经验</div>
+      </div>
+      <div class="teacher-card">
+        <div class="teacher-avatar av-teal">陈</div>
+        <div class="teacher-name">陈宝婷老师</div>
+        <div class="teacher-subject">数学</div>
+        <div class="teacher-creds">马来西亚理科大学化工系<br>曾任宽中数学科导师<br>丰富教学经验</div>
+      </div>
+      <div class="teacher-card">
+        <div class="teacher-avatar av-green">王</div>
+        <div class="teacher-name">王应瑛老师</div>
+        <div class="teacher-subject">数学</div>
+        <div class="teacher-creds">新加坡南洋理工大学毕业<br>曾任数据分析员多年<br>丰富教学经验</div>
+      </div>
+      <div class="teacher-card">
+        <div class="teacher-avatar av-red">Ray</div>
+        <div class="teacher-name">Ray Chin 老师</div>
+        <div class="teacher-subject">科学·物理</div>
+        <div class="teacher-creds">马来西亚工艺大学土木工程系<br>金科补习中心院长<br>18 年理科教学经验</div>
+      </div>
+      <div class="teacher-card">
+        <div class="teacher-avatar av-purple">刘</div>
+        <div class="teacher-name">刘世鸿老师</div>
+        <div class="teacher-subject">会计</div>
+        <div class="teacher-creds">国立政治大学企管学士<br>曾在宽柔中学执教超过 20 年</div>
+      </div>
+      <div class="teacher-card">
+        <div class="teacher-avatar av-navy">黄</div>
+        <div class="teacher-name">黄淑珍老师</div>
+        <div class="teacher-subject">华文</div>
+        <div class="teacher-creds">台湾师范大学中文系学士<br>新加坡国立大学中文系硕士<br>编著多部教学著作</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ MID CTA ═══ -->
+<section class="mid-cta fade-in">
+  <div class="container">
+    <h2>找到适合孩子的那一班了吗？</h2>
+    <p>现在名额还有，WhatsApp 我们确认座位，免费咨询，没有压力。</p>
+    <a class="btn-wa-white" href="https://wa.me/60166760079?text=您好，我想为孩子询问弘文馆中学补习班课程" target="_blank">
+      <svg viewBox="0 0 24 24" fill="#C0392B"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      WhatsApp 询问报名
+    </a>
+    <p style="font-size:0.88rem;margin-top:10px;opacity:0.78;">016-676 0079 · 免费咨询，不强迫报名</p>
+  </div>
+</section>
+
+<!-- ═══ TESTIMONIALS ═══ -->
+<section class="section testimonials fade-in">
+  <div class="container">
+    <div class="section-title">家长怎么说</div>
+    <div class="section-sub">真实的话，不加修饰</div>
+    <div class="testi-grid">
+      <div class="testi-card">
+        <div class="testi-quote">"</div>
+        <p class="testi-text">孩子初一时数学很吃力，跟不上宽中进度，来了弘文馆才发现原来老师真的懂宽中那一套。才几个月，孩子开始主动做功课，真的很感动。</p>
+        <div class="testi-author">—— <span>Wong 妈妈</span>，孩子就读宽中初一</div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-quote">"</div>
+        <p class="testi-text">国文之前一直是弱科，Cikgu Teo 的课很系统，孩子慢慢找到感觉，期末考进步了两个等级，我们真的很惊喜。</p>
+        <div class="testi-author">—— <span>Tan 爸爸</span>，孩子就读宽中初三</div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-quote">"</div>
+        <p class="testi-text">我们住比较远，选了线上班，老师一样认真，孩子不用来回奔波，节省很多时间，而且可以重温录像，效果很好。</p>
+        <div class="testi-author">—— <span>Lim 妈妈</span>，孩子就读宽中高一</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ IMAGE BANNER 2 ═══ -->
+<div class="img-banner fade-in">
+  <img src="img-classroom.jpg" alt="认真学习" loading="lazy" />
+  <div class="img-banner-overlay">
+    <div class="img-banner-text">
+      <h2>初一打好基础，<br>高三<em>从容应考</em></h2>
+      <p>六年陪伴，一步一步往前走</p>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ FAQ ═══ -->
+<section class="section faq-section fade-in">
+  <div class="container">
+    <div class="section-title">常见问题</div>
+    <div class="section-sub">家长最常问的几个问题</div>
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span>老师懂宽中课程吗？跟学校教的一样吗？</span>
+          <span class="faq-chevron">▼</span>
+        </div>
+        <div class="faq-a">我们的核心师资多位曾直接在宽柔中学任教，熟悉宽中教材、考题风格与评分要求。补习内容与学校课程紧密配合，不会让孩子学两套不同的东西。</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span>线上班和实体班效果一样吗？</span>
+          <span class="faq-chevron">▼</span>
+        </div>
+        <div class="faq-a">两者都有很好的效果。线上班节省通勤时间，老师互动依然充分；实体班则适合需要面对面答疑的学生。家长可以根据孩子的学习习惯与居住距离灵活选择，甚至两者弹性切换。</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span>孩子现在才来，会不会跟不上进度？</span>
+          <span class="faq-chevron">▼</span>
+        </div>
+        <div class="faq-a">老师会先了解孩子目前的程度，再作出相应的辅导安排。来之前可以先 WhatsApp 我们聊一聊，我们会建议最合适的班级，让孩子更快进入状态。</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span>百合总院和高雅分院有什么分别？</span>
+          <span class="faq-chevron">▼</span>
+        </div>
+        <div class="faq-a">两家分院共用相同的师资团队，课程质量一致。主要差别在于地点与开设科目的组合。高雅分院科目最为齐全，覆盖初一到高三；百合总院有部分科目以线上形式开设。选哪一间，通常视家庭所在位置与孩子所需科目来决定。</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span>国中生、国际学校学生可以报名吗？</span>
+          <span class="faq-chevron">▼</span>
+        </div>
+        <div class="faq-a">可以。我们的华文科班级开放给国中、宽中、国际学校，甚至新加坡学生报名。其他科目主要面向宽中（至宽／新宽）学生，具体可以 WhatsApp 询问。</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span>怎么报名？需要先试课吗？</span>
+          <span class="faq-chevron">▼</span>
+        </div>
+        <div class="faq-a">直接 WhatsApp 我们（016-676 0079），告诉我们孩子的年级和想报的科目，我们会为你安排。报名手续简单，可以先咨询，没有任何压力。</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FINAL CTA ═══ -->
+<section class="final-cta fade-in">
+  <div class="final-cta-bg"></div>
+  <div class="final-cta-overlay"></div>
+  <div class="final-cta-content container">
+    <div class="tag">📍 新山 · 百合总院 ＆ 高雅分院</div>
+    <h2>
+      给孩子找一个<br>
+      <em>真正懂宽中</em>的老师
+    </h2>
+    <p>现在 WhatsApp 我们，免费咨询，我们帮你找最适合孩子的那一班。</p>
+    <div>
+      <a class="final-wa" href="https://wa.me/60166760079?text=您好，我想了解弘文馆2026中学补习课程，请问现在还有名额吗？" target="_blank">
+        <svg viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        016-676 0079 · 立即 WhatsApp
+      </a>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-item">🏫 <strong>百合总院</strong> · Setia Indah</div>
+      <div class="contact-item">🏫 <strong>高雅分院</strong> · Setia Indah</div>
+      <div class="contact-item">🌐 <strong>hongwenguan.vercel.app</strong></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 弘文馆教育中心 · Setia Indah, Johor Bahru
+</footer>
+
+<script>
+  function switchBranch(id, btn) {
+    document.querySelectorAll('.branch-panel').forEach(p => p.classList.remove('active'));
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.getElementById('branch-' + id).classList.add('active');
+    btn.classList.add('active');
+  }
+
+  function toggleLevel(header) {
+    const body = header.nextElementSibling;
+    const isOpen = header.classList.contains('open');
+    // Close all in same branch panel
+    const panel = header.closest('.branch-panel');
+    panel.querySelectorAll('.level-header.open').forEach(h => {
+      if (h !== header) {
+        h.classList.remove('open');
+        h.nextElementSibling.classList.remove('open');
+      }
+    });
+    header.classList.toggle('open', !isOpen);
+    body.classList.toggle('open', !isOpen);
+  }
+
+  function toggleFaq(q) {
+    const a = q.nextElementSibling;
+    const isOpen = q.classList.contains('open');
+    document.querySelectorAll('.faq-q.open').forEach(el => {
+      if (el !== q) { el.classList.remove('open'); el.nextElementSibling.classList.remove('open'); }
+    });
+    q.classList.toggle('open', !isOpen);
+    a.classList.toggle('open', !isOpen);
+  }
+
+  // Scroll fade-in
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.07 });
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+  // Auto-open first level of each branch
+  document.querySelectorAll('#branch-baili .level-header:first-of-type, #branch-gaoya .level-header:first-of-type').forEach(h => {
+    h.classList.add('open');
+    h.nextElementSibling.classList.add('open');
+  });
+</script>
+</body>
+</html>
