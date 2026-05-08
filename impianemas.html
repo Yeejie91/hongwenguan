@@ -326,7 +326,6 @@
       grid-template-columns: repeat(2, 1fr);
       gap: 12px;
     }
-    @media (min-width: 600px) { .gallery-grid { grid-template-columns: repeat(3, 1fr); } }
     .gallery-slot {
       background: #E0F7FA;
       border-radius: 12px;
@@ -335,8 +334,6 @@
       align-items: center; justify-content: center;
       gap: 8px;
       border: 2px dashed #80DEEA;
-      cursor: pointer;
-      transition: background .2s;
       overflow: hidden;
       position: relative;
     }
@@ -344,7 +341,11 @@
       position: absolute; inset: 0;
       width: 100%; height: 100%; object-fit: cover;
       border-radius: 10px;
+      display: block;
     }
+    /* hide placeholder once image loads */
+    .gallery-slot img ~ .slot-icon,
+    .gallery-slot img ~ .slot-label { display: none; }
     .gallery-slot .slot-label {
       font-size: 13px; color: #00838F; font-weight: 600;
       text-align: center; padding: 0 12px;
@@ -773,28 +774,27 @@
       <div class="gallery-slot">
         <img src="photo-02-bookshelf.jpg" alt="书架" onerror="this.style.display='none'"/>
         <span class="slot-icon">📚</span>
-        <span class="slot-label">存档名：photo-02-bookshelf.jpg</span>
+        <span class="slot-label">教室书架</span>
       </div>
-      <!-- 小图 2：学生上课 -->
-      <div class="gallery-slot">
-        <img src="photo-03-students.jpg" alt="学生上课" onerror="this.style.display='none'"/>
-        <span class="slot-icon">✏️</span>
-        <span class="slot-label">存档名：photo-03-students.jpg</span>
-      </div>
-      <!-- 小图 3：故事包包 -->
+      <!-- 小图 2：故事包包 -->
       <div class="gallery-slot">
         <img src="photo-04-storybag.jpg" alt="故事包包" onerror="this.style.display='none'"/>
         <span class="slot-icon">🎒</span>
-        <span class="slot-label">存档名：photo-04-storybag.jpg</span>
+        <span class="slot-label">故事包包</span>
+      </div>
+      <!-- 小图 3：学生上课 -->
+      <div class="gallery-slot">
+        <img src="photo-03-students.jpg" alt="学生上课" onerror="this.style.display='none'"/>
+        <span class="slot-icon">✏️</span>
+        <span class="slot-label">学生上课中</span>
       </div>
       <!-- 小图 4：师生互动 -->
       <div class="gallery-slot">
         <img src="photo-05-teaching.jpg" alt="师生互动" onerror="this.style.display='none'"/>
         <span class="slot-icon">🤝</span>
-        <span class="slot-label">存档名：photo-05-teaching.jpg</span>
+        <span class="slot-label">师生互动</span>
       </div>
     </div>
-    <p style="text-align:center;font-size:14px;color:var(--muted);margin-top:16px;">📷 把 5 张图片存成上方名称，放在与 HTML 同一文件夹，照片即自动显示</p>
   </div>
 </section>
 
@@ -885,24 +885,17 @@
         <div class="level">中一 / 初一 华文</div>
         <h3>《世界中的孩子》<br/>《明星节度使》</h3>
         <div class="books">以 SDGs 为主题探讨，带孩子看见更大的世界，培养思辩能力。</div>
-        <div class="bonus">🎁 附赠阅读理解线上平台 3 个月</div>
-      </div>
+</div>
       <div class="reading-card">
         <div class="level">中二 / 初二 华文</div>
         <h3>《在伤口上重生》<br/>《阅读理解 Junior》</h3>
         <div class="books">以五一三事件为背景，引导孩子了解马来西亚历史，培养人文关怀。</div>
-        <div class="bonus">🎁 附赠阅读理解线上平台 3 个月</div>
-      </div>
+</div>
       <div class="reading-card">
         <div class="level">中三 / 初三 华文</div>
         <h3>《那天，我抱着一只天鹅回家》<br/>《阅读理解 Junior》</h3>
         <div class="books">温暖的动物故事，训练细读与情感分析能力，为考试作文打下深厚根基。</div>
-        <div class="bonus">🎁 附赠阅读理解线上平台 3 个月</div>
-      </div>
-    </div>
-    <div class="reading-price-badge">
-      <div class="price">故事包包 RM 100</div>
-      <p>含正版书籍 + 线上平台三个月，一次性费用</p>
+</div>
     </div>
   </div>
 </section>
@@ -954,7 +947,7 @@
           <span>故事包包一定要买吗？</span>
           <span class="arrow">+</span>
         </button>
-        <div class="faq-a">故事包包是华文阅读课的核心教材，内含精选小说和阅读理解练习，并附赠三个月线上阅读平台。建议配合课程一并购入，效果最好。价格为 RM 100（一次性）。</div>
+        <div class="faq-a">故事包包是华文阅读课的核心教材，内含精选小说和阅读理解练习。建议配合课程一并购入，效果最好。价格详情欢迎 WhatsApp 询问。</div>
       </div>
       <div class="faq-item">
         <button class="faq-q" onclick="toggleFaq(this)">
