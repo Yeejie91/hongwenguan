@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="zh-MY">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>弘文馆教育中心 金山园分院 · 中学组补习</title>
+
+  <!-- Facebook OG Tags -->
+  <meta property="og:title" content="弘文馆教育中心 金山园分院｜中学组专业补习" />
+  <meta property="og:description" content="宽中 & 国中生专属 · 华文 / 数学 / 英文 / 国文 · 台大、NTU 名校师资 · 金山园 Impian Emas · WhatsApp 016-752 8359" />
+  <meta property="og:image" content="https://hongwenguan.vercel.app/og-cover.jpg" />
+  <meta property="og:url" content="https://hongwenguan.vercel.app/jinshangyuan" />
+  <meta property="og:type" content="website" />
+  <meta name="description" content="弘文馆教育中心金山园分院 — 专为宽中、国中、独中中学生提供华文、数学、英文、国文专科补习。台大、台师大、NTU 名校师资，经验丰富，成绩有保障。" />
+
+  <style>
+    /* ─── Reset & Base ─── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'PingFang SC', 'Noto Sans SC', 'Microsoft YaHei', sans-serif;
+      background: #F5FEFF;
+      color: #1E1E1E;
+      font-size: 18px;
+      line-height: 1.75;
+    }
+    img { max-width: 100%; display: block; }
+    a { text-decoration: none; color: inherit; }
+
+    /* ─── Colors ─── */
+    :root {
+      --green:   #0097A7;
+      --green-light: #00BCD4;
+      --red:     #FF5722;
+      --gold:    #FFB300;
+      --cream:   #E8FAFB;
+      --beige:   #FFF3E0;
+      --dark:    #1A1A1A;
+      --muted:   #6B6B6B;
+      --white:   #FFFFFF;
+      --wa:      #25D366;
+    }
+
+    /* ─── Utility ─── */
+    .container { max-width: 780px; margin: 0 auto; padding: 0 20px; }
+    .text-center { text-align: center; }
+    .section { padding: 60px 0; }
+    .section-alt { background: var(--beige); }
+    .badge {
+      display: inline-block;
+      background: var(--red);
+      color: #fff;
+      font-size: 14px;
+      font-weight: 700;
+      padding: 5px 14px;
+      border-radius: 20px;
+      letter-spacing: 0.5px;
+      margin-bottom: 12px;
+    }
+    .badge-green { background: var(--green); }
+    .badge-gold  { background: var(--gold); }
+    h2.section-title {
+      font-size: clamp(26px, 5.5vw, 36px);
+      color: var(--green);
+      font-weight: 800;
+      line-height: 1.3;
+      margin-bottom: 10px;
+    }
+    p.section-sub {
+      color: var(--muted);
+      font-size: 17px;
+      margin-bottom: 36px;
+    }
+    .divider {
+      width: 48px; height: 4px;
+      background: var(--gold);
+      border-radius: 2px;
+      margin: 12px auto 32px;
+    }
+
+    /* ─── WhatsApp Button ─── */
+    .wa-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--wa);
+      color: #fff;
+      font-size: 18px;
+      font-weight: 700;
+      padding: 16px 32px;
+      border-radius: 50px;
+      box-shadow: 0 4px 16px rgba(37,211,102,0.4);
+      transition: transform .2s, box-shadow .2s;
+    }
+    .wa-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(37,211,102,0.5); }
+    .wa-btn svg { width: 24px; height: 24px; fill: #fff; flex-shrink: 0; }
+    .wa-btn-outline {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border: 2px solid var(--green);
+      color: var(--green);
+      font-size: 16px;
+      font-weight: 700;
+      padding: 13px 28px;
+      border-radius: 50px;
+      transition: all .2s;
+    }
+    .wa-btn-outline:hover { background: var(--green); color: #fff; }
+    .wa-icon { width: 22px; height: 22px; }
+
+    /* ─── NAV ─── */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: var(--green);
+      padding: 14px 22px;
+      display: flex; align-items: center; justify-content: space-between;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+    }
+    .nav-brand {
+      color: #fff;
+      font-size: 19px;
+      font-weight: 800;
+      line-height: 1.2;
+    }
+    .nav-brand span { display: block; font-size: 12px; font-weight: 400; opacity: .85; }
+    .nav-wa {
+      background: var(--wa);
+      color: #fff;
+      font-size: 15px;
+      font-weight: 700;
+      padding: 10px 20px;
+      border-radius: 50px;
+      white-space: nowrap;
+    }
+
+    /* ─── HERO ─── */
+    #hero {
+      background: linear-gradient(160deg, #0097A7 0%, #00606A 100%);
+      color: #fff;
+      padding: 68px 20px 56px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    /* hero watermark removed */
+    .hero-label {
+      display: inline-block;
+      background: var(--gold);
+      color: #fff;
+      font-size: 14px;
+      font-weight: 700;
+      padding: 6px 18px;
+      border-radius: 20px;
+      margin-bottom: 20px;
+      letter-spacing: 1px;
+    }
+    #hero h1 {
+      font-size: clamp(30px, 8vw, 48px);
+      font-weight: 900;
+      line-height: 1.25;
+      margin-bottom: 20px;
+    }
+    #hero h1 em {
+      font-style: normal;
+      color: #FFE066;
+    }
+    #hero p.hero-sub {
+      font-size: 18px;
+      opacity: .92;
+      max-width: 540px;
+      margin: 0 auto 36px;
+      line-height: 1.8;
+    }
+    .hero-cta-group {
+      display: flex; flex-direction: column; align-items: center; gap: 16px;
+    }
+    .hero-stats {
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      margin-top: 48px;
+      flex-wrap: wrap;
+    }
+    .hero-stat {
+      text-align: center;
+    }
+    .hero-stat .num {
+      font-size: 36px;
+      font-weight: 900;
+      color: #FFE066;
+      line-height: 1;
+    }
+    .hero-stat .lbl {
+      font-size: 14px;
+      opacity: .85;
+      margin-top: 5px;
+    }
+
+    /* ─── PAIN POINTS ─── */
+    #pain { background: #fff; }
+    .pain-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+    .pain-card {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      background: #FFF5F5;
+      border-left: 4px solid var(--red);
+      border-radius: 10px;
+      padding: 18px 20px;
+    }
+    .pain-icon { font-size: 34px; flex-shrink: 0; margin-top: 2px; }
+    .pain-card h3 { font-size: 18px; font-weight: 700; color: var(--dark); margin-bottom: 6px; }
+    .pain-card p  { font-size: 16px; color: var(--muted); line-height: 1.7; }
+
+    /* ─── WHY US ─── */
+    #why .why-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+    .why-card {
+      background: var(--white);
+      border-radius: 14px;
+      padding: 24px 22px;
+      box-shadow: 0 2px 14px rgba(0,0,0,0.07);
+      border-top: 4px solid var(--green);
+      position: relative;
+    }
+    .why-num {
+      position: absolute; top: 16px; right: 18px;
+      font-size: 52px; font-weight: 900;
+      color: rgba(0,151,167,0.08);
+      line-height: 1;
+    }
+    .why-card h3 { font-size: 20px; font-weight: 800; color: var(--green); margin-bottom: 10px; }
+    .why-card p  { font-size: 16px; color: #444; line-height: 1.75; }
+    .why-card .tag {
+      display: inline-block;
+      background: var(--beige);
+      color: var(--green);
+      font-size: 13px;
+      font-weight: 700;
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-top: 12px;
+      margin-right: 4px;
+    }
+
+    /* ─── TEACHERS ─── */
+    #teachers { background: #fff; }
+    .teacher-intro {
+      font-size: 17px; color: var(--muted);
+      max-width: 600px; margin: 0 auto 32px;
+      text-align: center;
+    }
+    .teacher-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+    @media (max-width: 400px) { .teacher-grid { grid-template-columns: 1fr; } }
+    .teacher-photo {
+      width: 80px; height: 80px;
+      border-radius: 50%;
+      background: #E0F7FA;
+      border: 3px solid var(--green);
+      margin-bottom: 12px;
+      display: flex; align-items: center; justify-content: center;
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+    .teacher-photo img { width: 100%; height: 100%; object-fit: cover; }
+    .teacher-photo .photo-placeholder {
+      font-size: 28px;
+      color: #B2EBF2;
+    }
+    .teacher-card {
+      background: var(--beige);
+      border-radius: 12px;
+      padding: 20px 16px;
+      border-bottom: 3px solid var(--green);
+    }
+    .teacher-subject {
+      font-size: 13px; font-weight: 700;
+      color: var(--white);
+      background: var(--green);
+      display: inline-block;
+      padding: 3px 12px;
+      border-radius: 20px;
+      margin-bottom: 10px;
+    }
+    .teacher-card h3 { font-size: 18px; font-weight: 800; color: var(--dark); margin-bottom: 8px; }
+    .teacher-card ul { list-style: none; }
+    .teacher-card ul li {
+      font-size: 14px; color: #555;
+      padding: 3px 0;
+      padding-left: 16px;
+      position: relative;
+    }
+    .teacher-card ul li::before {
+      content: '✦';
+      position: absolute; left: 0;
+      color: var(--gold);
+      font-size: 10px;
+      top: 5px;
+    }
+    .teacher-highlight {
+      background: linear-gradient(135deg, #0097A7, #00606A);
+      color: #fff;
+    }
+    .teacher-highlight .teacher-photo {
+      background: rgba(255,255,255,0.15);
+      border-color: rgba(255,255,255,0.5);
+    }
+    .teacher-highlight .teacher-photo .photo-placeholder { color: rgba(255,255,255,0.4); }
+
+    /* ─── PHOTO GALLERY ─── */
+    #gallery { background: var(--beige); }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+    @media (min-width: 600px) { .gallery-grid { grid-template-columns: repeat(3, 1fr); } }
+    .gallery-slot {
+      background: #E0F7FA;
+      border-radius: 12px;
+      aspect-ratio: 4/3;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      gap: 8px;
+      border: 2px dashed #80DEEA;
+      cursor: pointer;
+      transition: background .2s;
+      overflow: hidden;
+      position: relative;
+    }
+    .gallery-slot img {
+      position: absolute; inset: 0;
+      width: 100%; height: 100%; object-fit: cover;
+      border-radius: 10px;
+    }
+    .gallery-slot .slot-label {
+      font-size: 13px; color: #00838F; font-weight: 600;
+      text-align: center; padding: 0 12px;
+    }
+    .gallery-slot .slot-icon { font-size: 32px; }
+    .gallery-slot-wide {
+      grid-column: 1 / -1;
+      aspect-ratio: 16/7;
+    }
+    .teacher-highlight .teacher-subject { background: var(--gold); }
+    .teacher-highlight h3 { color: #FFD580; }
+    .teacher-highlight ul li { color: rgba(255,255,255,0.85); }
+    .teacher-highlight ul li::before { color: #FFD580; }
+
+    /* ─── COURSES ─── */
+    #courses { }
+    .course-tabs {
+      display: flex; flex-wrap: wrap; gap: 8px;
+      margin-bottom: 24px; justify-content: center;
+    }
+    .tab-btn {
+      background: var(--beige);
+      border: 2px solid transparent;
+      color: var(--green);
+      font-size: 15px; font-weight: 700;
+      padding: 10px 20px;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: all .2s;
+    }
+    .tab-btn.active, .tab-btn:hover {
+      background: var(--green);
+      color: #fff;
+    }
+    .course-panel { display: none; }
+    .course-panel.active { display: block; }
+    .schedule-table {
+      width: 100%;
+      border-collapse: collapse;
+      border-radius: 12px;
+      overflow: hidden;
+      font-size: 16px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    }
+    .schedule-table thead { background: var(--green); color: #fff; }
+    .schedule-table th { padding: 14px 16px; text-align: left; font-size: 15px; }
+    .schedule-table tbody tr:nth-child(even) { background: #E0F7FA; }
+    .schedule-table tbody tr:nth-child(odd)  { background: #fff; }
+    .schedule-table td { padding: 13px 16px; border-bottom: 1px solid #B2EBF2; vertical-align: middle; }
+    .schedule-table td strong { color: var(--green); font-weight: 700; }
+    .day-chip {
+      display: inline-block;
+      background: var(--orange, #FF5722);
+      color: #fff;
+      font-size: 13px; font-weight: 700;
+      padding: 3px 10px; border-radius: 20px;
+    }
+
+    /* ─── 故事包包 ─── */
+    #reading { background: linear-gradient(135deg, #FF6D00 0%, #E65100 100%); color: #fff; }
+    #reading h2.section-title { color: #FFE066; }
+    #reading .divider { background: #FFE066; }
+    #reading p.section-sub { color: rgba(255,255,255,0.88); }
+    .reading-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+    .reading-card {
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 14px;
+      padding: 20px 22px;
+      backdrop-filter: blur(4px);
+    }
+    .reading-card .level {
+      font-size: 15px; font-weight: 800;
+      color: #FFE066;
+      margin-bottom: 10px;
+      display: flex; align-items: center; gap: 8px;
+    }
+    .reading-card .level::before {
+      content: '';
+      display: inline-block;
+      width: 7px; height: 7px;
+      background: #FFE066;
+      border-radius: 50%;
+    }
+    .reading-card h3 { font-size: 17px; font-weight: 700; margin-bottom: 8px; }
+    .reading-card .books { font-size: 15px; opacity: .92; line-height: 1.8; }
+    .reading-card .bonus {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: rgba(255,255,255,0.18);
+      font-size: 14px; color: #FFE066;
+      padding: 5px 14px; border-radius: 20px;
+      margin-top: 12px;
+    }
+    .reading-price-badge {
+      text-align: center;
+      margin-top: 32px;
+    }
+    .reading-price-badge .price {
+      display: inline-block;
+      background: #FFE066;
+      color: #7B3600;
+      font-size: 22px; font-weight: 900;
+      padding: 12px 36px;
+      border-radius: 50px;
+      letter-spacing: 0.5px;
+    }
+    .reading-price-badge p {
+      font-size: 15px; opacity: .8; margin-top: 10px;
+    }
+
+    /* ─── MID CTA ─── */
+    #mid-cta {
+      background: var(--beige);
+      text-align: center;
+      padding: 50px 20px;
+    }
+    #mid-cta h2 { font-size: clamp(22px, 5vw, 32px); font-weight: 800; color: var(--green); margin-bottom: 10px; }
+    #mid-cta p  { font-size: 17px; color: var(--muted); margin-bottom: 28px; max-width: 460px; margin-left: auto; margin-right: auto; }
+    #mid-cta p:last-of-type { margin-bottom: 28px; }
+
+    /* ─── FAQ ─── */
+    #faq { background: #fff; }
+    .faq-list { display: flex; flex-direction: column; gap: 12px; }
+    .faq-item {
+      border: 1px solid #E0D8C8;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .faq-q {
+      width: 100%; text-align: left;
+      background: none; border: none; cursor: pointer;
+      font-size: 17px; font-weight: 700;
+      color: var(--dark);
+      padding: 18px 20px;
+      display: flex; justify-content: space-between; align-items: center;
+      gap: 12px;
+    }
+    .faq-q .arrow { font-size: 20px; flex-shrink: 0; transition: transform .25s; color: var(--green); }
+    .faq-item.open .faq-q .arrow { transform: rotate(45deg); }
+    .faq-a {
+      display: none;
+      padding: 0 20px 18px;
+      font-size: 16px;
+      color: #555;
+      line-height: 1.75;
+      border-top: 1px solid #B2EBF2;
+      padding-top: 16px;
+    }
+    .faq-item.open .faq-a { display: block; }
+
+    /* ─── FINAL CTA ─── */
+    #final-cta {
+      background: linear-gradient(135deg, #0097A7 0%, #006978 100%);
+      color: #fff;
+      text-align: center;
+      padding: 64px 20px;
+    }
+    #final-cta h2 { font-size: clamp(24px, 5.5vw, 36px); font-weight: 900; margin-bottom: 12px; }
+    #final-cta p  { font-size: 17px; opacity: .88; margin-bottom: 32px; max-width: 460px; margin-left: auto; margin-right: auto; }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+      max-width: 480px;
+      margin: 0 auto 36px;
+      text-align: left;
+    }
+    .contact-item {
+      display: flex; align-items: flex-start; gap: 14px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 12px;
+      padding: 16px 18px;
+    }
+    .contact-item .icon { font-size: 22px; flex-shrink: 0; }
+    .contact-item .info { font-size: 16px; line-height: 1.65; }
+    .contact-item .info strong { display: block; font-size: 13px; opacity: .7; margin-bottom: 2px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+    .urgency-note {
+      display: inline-block;
+      background: var(--red);
+      color: #fff;
+      font-size: 15px; font-weight: 700;
+      padding: 10px 26px;
+      border-radius: 50px;
+      margin-bottom: 28px;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: .75; }
+    }
+
+    /* ─── FOOTER ─── */
+    footer {
+      background: #004D57;
+      color: rgba(255,255,255,0.65);
+      text-align: center;
+      padding: 22px;
+      font-size: 14px;
+    }
+
+    /* ─── STICKY WA ─── */
+    .sticky-wa {
+      position: fixed; bottom: 20px; right: 20px; z-index: 200;
+    }
+    .sticky-wa a {
+      display: flex; align-items: center; justify-content: center;
+      width: 56px; height: 56px;
+      background: var(--wa);
+      border-radius: 50%;
+      box-shadow: 0 4px 20px rgba(37,211,102,0.5);
+      transition: transform .2s;
+    }
+    .sticky-wa a:hover { transform: scale(1.1); }
+    .sticky-wa svg { width: 30px; height: 30px; fill: #fff; }
+
+    /* ─── Responsive ─── */
+    @media (min-width: 600px) {
+      .pain-grid { grid-template-columns: 1fr 1fr; }
+      #why .why-grid { grid-template-columns: 1fr 1fr; }
+      .reading-grid { grid-template-columns: 1fr 1fr 1fr; }
+      .contact-grid { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ══════════════ NAV ══════════════ -->
+<nav>
+  <div class="nav-brand">
+    弘文馆教育中心
+    <span>金山园分院 · Hong Wen Guan Learning Centre Impian Emas</span>
+  </div>
+  <a href="https://wa.me/60167528359?text=您好，我想了解中学组课程详情" class="nav-wa">📲 询问</a>
+</nav>
+
+<!-- ══════════════ HERO ══════════════ -->
+<section id="hero">
+  <div class="hero-label">📍 金山园 Impian Emas · 中学组</div>
+  <h1>孩子升上中学，<br/><em>成绩不能靠运气</em></h1>
+  <p class="hero-sub">
+    弘文馆教育中心金山园分院，专为宽中 & 国中 / 独中生而设。
+    台大、台师大、NTU 名校师资，专科专教，让每一分都有根据。
+  </p>
+  <div class="hero-cta-group">
+    <a href="https://wa.me/60167528359?text=您好，我想了解中学组课程详情" class="wa-btn">
+      <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.532 5.854L.054 23.5l5.82-1.527A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.816 9.816 0 01-5.003-1.368l-.359-.213-3.724.977.994-3.63-.234-.373A9.813 9.813 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182c5.43 0 9.818 4.388 9.818 9.818 0 5.43-4.388 9.818-9.818 9.818z"/></svg>
+      立即 WhatsApp 询问
+    </a>
+    <a href="#courses" class="wa-btn-outline" style="color:#FFD580;border-color:#FFD580;">查看课程时间表 ↓</a>
+  </div>
+
+  <div class="hero-stats">
+    <div class="hero-stat"><div class="num">4</div><div class="lbl">专科科目</div></div>
+    <div class="hero-stat"><div class="num">6</div><div class="lbl">专业师资</div></div>
+    <div class="hero-stat"><div class="num">中一<br/>至高二</div><div class="lbl">全阶段覆盖</div></div>
+    <div class="hero-stat"><div class="num">名校</div><div class="lbl">台大·NTU·NUS</div></div>
+  </div>
+</section>
+
+<!-- ══════════════ PAIN POINTS ══════════════ -->
+<section id="pain" class="section">
+  <div class="container text-center">
+    <span class="badge">你是不是也有这些担心？</span>
+    <h2 class="section-title">升上中学，家长最怕的三件事</h2>
+    <div class="divider"></div>
+    <div class="pain-grid">
+      <div class="pain-card">
+        <div class="pain-icon">😰</div>
+        <div>
+          <h3>小学成绩还好，升中后突然跟不上</h3>
+          <p>中学科目多、难度跳升，很多学生第一年就感到吃力，等发现才来补已经落后了一大截。</p>
+        </div>
+      </div>
+      <div class="pain-card">
+        <div class="pain-icon">🤔</div>
+        <div>
+          <h3>补习老师讲了，孩子还是不懂</h3>
+          <p>一个老师教七八科，深度根本不够。弘文馆坚持"专科专教"——数学老师只教数学，华文老师只教华文。</p>
+        </div>
+      </div>
+      <div class="pain-card">
+        <div class="pain-icon">📚</div>
+        <div>
+          <h3>宽中课程与国中不同，找不到对口老师</h3>
+          <p>宽中有特定课纲，国文科老师曾任宽中导师，完全掌握考试方向，不靠猜题靠系统。</p>
+        </div>
+      </div>
+      <div class="pain-card">
+        <div class="pain-icon">😟</div>
+        <div>
+          <h3>孩子不爱读书，华文更是头痛</h3>
+          <p>弘文馆华文课以"读书会"方式进行，每年精选小说搭配线上阅读平台，让孩子在故事里自然爱上文字。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ WHY US ══════════════ -->
+<section id="why" class="section section-alt">
+  <div class="container text-center">
+    <span class="badge badge-green">为什么选弘文馆？</span>
+    <h2 class="section-title">专业、用心、就在金山园</h2>
+    <div class="divider"></div>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-num">01</div>
+        <h3>名校师资，专科专教</h3>
+        <p>数学老师来自 MMU、理科大、南洋理工；华文老师来自台大、台师大、新加坡国大。每一科都由真正专精该领域的老师负责，不是全科包办。</p>
+        <span class="tag">台大</span><span class="tag">NTU</span><span class="tag">NUS</span><span class="tag">台师大</span>
+      </div>
+      <div class="why-card">
+        <div class="why-num">02</div>
+        <h3>华文阅读，深度养成</h3>
+        <p>弘文馆自创"故事包包🎒"——每学年为不同年级精选文学小说，以读书会方式引导讨论，搭配线上阅读理解平台，把语文变成真正的能力。</p>
+        <span class="tag">读书会</span><span class="tag">文学素养</span><span class="tag">线上平台</span>
+      </div>
+      <div class="why-card">
+        <div class="why-num">03</div>
+        <h3>宽中 & 国中，两边都到位</h3>
+        <p>国文科 Cikgu Sam 曾任宽中国文科导师，深谙宽中考题思路。数学分 A、B 两组，因材施教，不让任何孩子落单。</p>
+        <span class="tag">宽中备考</span><span class="tag">分组教学</span>
+      </div>
+      <div class="why-card">
+        <div class="why-num">04</div>
+        <h3>金山园社区的自己人</h3>
+        <p>分院就在 Taman Anggerik，接送方便，社区氛围温馨。不是大型连锁补习中心，老师认识每一个学生的名字和弱点。</p>
+        <span class="tag">Impian Emas</span><span class="tag">小班教学</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ TEACHERS ══════════════ -->
+<section id="teachers" class="section">
+  <div class="container">
+    <div class="text-center">
+      <span class="badge badge-gold">师资阵容</span>
+      <h2 class="section-title">认识你孩子未来的老师</h2>
+      <div class="divider"></div>
+      <p class="teacher-intro">每一位导师都是真正专精自己领域的专科老师，不是什么都教、什么都教不好的全科老师。</p>
+    </div>
+    <div class="teacher-grid">
+      <div class="teacher-card teacher-highlight">
+<span class="teacher-subject">华文科</span>
+        <h3>杨丽珍 老师</h3>
+        <ul>
+          <li>国立台湾大学中文系学士</li>
+          <li>曾任新加坡中学中文科导师</li>
+          <li>弘文馆院长 · 师资培训组长</li>
+          <li>半亩天光阅读理解讲师</li>
+        </ul>
+      </div>
+      <div class="teacher-card">
+<span class="teacher-subject">数学科</span>
+        <h3>陈俏芮 老师</h3>
+        <ul>
+          <li>MMU 机械工程荣誉学士</li>
+          <li>国立台湾师范大学教育文凭</li>
+          <li>曾任独中教师</li>
+          <li>荣获 3 届优秀教师奖</li>
+        </ul>
+      </div>
+      <div class="teacher-card">
+<span class="teacher-subject">数学科</span>
+        <h3>王应瑛 老师</h3>
+        <ul>
+          <li>新加坡南洋理工大学学士</li>
+          <li>曾任数据分析员多年</li>
+          <li>数学思维扎实，擅长解题策略</li>
+        </ul>
+      </div>
+      <div class="teacher-card">
+<span class="teacher-subject">数学科</span>
+        <h3>陈宝婷 老师</h3>
+        <ul>
+          <li>马来西亚理科大学化工系学士</li>
+          <li>多年专职补教经验</li>
+        </ul>
+      </div>
+      <div class="teacher-card teacher-highlight">
+<span class="teacher-subject">国文科</span>
+        <h3>Cikgu Sam</h3>
+        <ul>
+          <li>南方大学学院马来文系学士</li>
+          <li>台湾树德科大硕士生</li>
+          <li>曾任宽中国文科导师</li>
+          <li>多年补教经验</li>
+        </ul>
+      </div>
+      <div class="teacher-card">
+<span class="teacher-subject">英文科</span>
+        <h3>杨德祥 老师</h3>
+        <ul>
+          <li>南京大学中文硕士</li>
+          <li>曾任独中教师 · 学院讲师</li>
+          <li>文学奖评审</li>
+          <li>超过 25 年补教经验</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ GALLERY ══════════════ -->
+<section id="gallery" class="section">
+  <div class="container">
+    <div class="text-center">
+      <span class="badge badge-green">分院环境</span>
+      <h2 class="section-title">来看看我们的地方</h2>
+      <div class="divider"></div>
+      <p class="section-sub">金山园 Impian Emas · 温馨小班 · 专注学习</p>
+    </div>
+    <div class="gallery-grid">
+      <!-- 宽幅横图：教室全景 -->
+      <div class="gallery-slot gallery-slot-wide">
+        <img src="photo-01-classroom.jpg" alt="弘文馆金山园分院教室" onerror="this.style.display='none'"/>
+        <span class="slot-icon">🏫</span>
+        <span class="slot-label">存档名：photo-01-classroom.jpg</span>
+      </div>
+      <!-- 小图 1：书架 -->
+      <div class="gallery-slot">
+        <img src="photo-02-bookshelf.jpg" alt="书架" onerror="this.style.display='none'"/>
+        <span class="slot-icon">📚</span>
+        <span class="slot-label">存档名：photo-02-bookshelf.jpg</span>
+      </div>
+      <!-- 小图 2：学生上课 -->
+      <div class="gallery-slot">
+        <img src="photo-03-students.jpg" alt="学生上课" onerror="this.style.display='none'"/>
+        <span class="slot-icon">✏️</span>
+        <span class="slot-label">存档名：photo-03-students.jpg</span>
+      </div>
+      <!-- 小图 3：故事包包 -->
+      <div class="gallery-slot">
+        <img src="photo-04-storybag.jpg" alt="故事包包" onerror="this.style.display='none'"/>
+        <span class="slot-icon">🎒</span>
+        <span class="slot-label">存档名：photo-04-storybag.jpg</span>
+      </div>
+      <!-- 小图 4：师生互动 -->
+      <div class="gallery-slot">
+        <img src="photo-05-teaching.jpg" alt="师生互动" onerror="this.style.display='none'"/>
+        <span class="slot-icon">🤝</span>
+        <span class="slot-label">存档名：photo-05-teaching.jpg</span>
+      </div>
+    </div>
+    <p style="text-align:center;font-size:14px;color:var(--muted);margin-top:16px;">📷 把 5 张图片存成上方名称，放在与 HTML 同一文件夹，照片即自动显示</p>
+  </div>
+</section>
+
+<!-- ══════════════ COURSES ══════════════ -->
+<section id="courses" class="section section-alt">
+  <div class="container">
+    <div class="text-center">
+      <span class="badge badge-green">课程时间表</span>
+      <h2 class="section-title">找到你孩子的班级</h2>
+      <div class="divider"></div>
+      <p class="section-sub">点击年级查看详细时间表</p>
+    </div>
+
+    <!-- Tab buttons -->
+    <div class="course-tabs">
+      <button class="tab-btn active" onclick="showTab('c1')">中一 / 宽中初一</button>
+      <button class="tab-btn" onclick="showTab('c2')">中二 / 宽中初二</button>
+      <button class="tab-btn" onclick="showTab('c3')">中三 / 宽中初三</button>
+      <button class="tab-btn" onclick="showTab('sr')">高中组（高一 / 高二）</button>
+    </div>
+
+    <!-- 中一 -->
+    <div id="c1" class="course-panel active">
+      <table class="schedule-table">
+        <thead><tr><th>日期</th><th>时间</th><th>科目</th><th>老师</th></tr></thead>
+        <tbody>
+          <tr><td><span class="day-chip">周四</span></td><td>7:45 – 9:15 PM</td><td><strong>华文阅读（线上）</strong></td><td>杨丽珍 老师</td></tr>
+          <tr><td><span class="day-chip">周六</span></td><td>2:30 – 4:00 PM</td><td><strong>国文</strong></td><td>Cikgu Sam</td></tr>
+          <tr><td><span class="day-chip">周六</span></td><td>4:15 – 5:45 PM</td><td><strong>数学 A 组</strong></td><td>陈宝婷 老师</td></tr>
+          <tr><td><span class="day-chip">周日</span></td><td>10:45 – 12:15 PM</td><td><strong>数学 B 组</strong></td><td>王应瑛 老师</td></tr>
+          <tr><td><span class="day-chip">周日</span></td><td>12:30 – 2:00 PM</td><td><strong>英文</strong></td><td>杨德祥 老师</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- 中二 -->
+    <div id="c2" class="course-panel">
+      <table class="schedule-table">
+        <thead><tr><th>日期</th><th>时间</th><th>科目</th><th>老师</th></tr></thead>
+        <tbody>
+          <tr><td><span class="day-chip">周五</span></td><td>7:45 – 9:15 PM</td><td><strong>华文阅读（实体）</strong></td><td>陈彦丰 老师</td></tr>
+          <tr><td><span class="day-chip">周日</span></td><td>8:45 – 10:15 AM</td><td><strong>英文</strong></td><td>杨德祥 老师</td></tr>
+          <tr><td><span class="day-chip">周日</span></td><td>11:00 – 12:30 PM</td><td><strong>国文</strong></td><td>Cikgu Sam</td></tr>
+          <tr><td><span class="day-chip">周日</span></td><td>12:30 – 2:00 PM</td><td><strong>数学 A / B 组</strong></td><td>陈俏芮 / 王应瑛 老师</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- 中三 -->
+    <div id="c3" class="course-panel">
+      <table class="schedule-table">
+        <thead><tr><th>日期</th><th>时间</th><th>科目</th><th>老师</th></tr></thead>
+        <tbody>
+          <tr><td><span class="day-chip">周四</span></td><td>7:45 – 9:15 PM</td><td><strong>华文阅读（线上）</strong></td><td>陈彦丰 老师</td></tr>
+          <tr><td><span class="day-chip">周日</span></td><td>9:00 – 10:30 AM</td><td><strong>数学 A 组</strong></td><td>陈俏芮 老师</td></tr>
+          <tr><td><span class="day-chip">周日</span></td><td>10:45 – 12:15 PM</td><td><strong>英文</strong></td><td>杨德祥 老师</td></tr>
+          <tr><td><span class="day-chip">周日</span></td><td>12:30 – 2:00 PM</td><td><strong>国文</strong></td><td>Cikgu Sam</td></tr>
+          <tr><td><span class="day-chip">周日</span></td><td>2:45 – 4:15 PM</td><td><strong>数学 B 组</strong></td><td>王应瑛 老师</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- 高中 -->
+    <div id="sr" class="course-panel">
+      <table class="schedule-table">
+        <thead><tr><th>日期</th><th>时间</th><th>科目</th><th>老师</th></tr></thead>
+        <tbody>
+          <tr><td><span class="day-chip">周日</span></td><td>4:30 – 6:00 PM</td><td><strong>高一 文商 数学</strong></td><td>王应瑛 老师</td></tr>
+          <tr><td><span class="day-chip">周五</span></td><td>7:45 – 9:30 PM</td><td><strong>高二 文商 数学</strong></td><td>陈俏芮 老师</td></tr>
+          <tr><td><span class="day-chip">周日</span></td><td>10:30 – 12:00 PM</td><td><strong>高二 理科 数学</strong></td><td>陈俏芮 老师</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p style="text-align:center;font-size:13px;color:var(--muted);margin-top:18px;">📌 时间表如有调整，以 WhatsApp 通知为准。欢迎询问最新班级名额。</p>
+  </div>
+</section>
+
+<!-- ══════════════ 故事包包 ══════════════ -->
+<section id="reading" class="section">
+  <div class="container text-center">
+    <span class="badge" style="background:var(--gold);">✨ 特色计划</span>
+    <h2 class="section-title">中学组 · 故事包包 🎒</h2>
+    <div class="divider"></div>
+    <p class="section-sub">阅读不只是课本。弘文馆为每个年级精选文学小说，以读书会方式引导孩子走进文字的世界。</p>
+    <div class="reading-grid">
+      <div class="reading-card">
+        <div class="level">中一 / 初一 华文</div>
+        <h3>《世界中的孩子》<br/>《明星节度使》</h3>
+        <div class="books">以 SDGs 为主题探讨，带孩子看见更大的世界，培养思辩能力。</div>
+        <div class="bonus">🎁 附赠阅读理解线上平台 3 个月</div>
+      </div>
+      <div class="reading-card">
+        <div class="level">中二 / 初二 华文</div>
+        <h3>《在伤口上重生》<br/>《阅读理解 Junior》</h3>
+        <div class="books">以五一三事件为背景，引导孩子了解马来西亚历史，培养人文关怀。</div>
+        <div class="bonus">🎁 附赠阅读理解线上平台 3 个月</div>
+      </div>
+      <div class="reading-card">
+        <div class="level">中三 / 初三 华文</div>
+        <h3>《那天，我抱着一只天鹅回家》<br/>《阅读理解 Junior》</h3>
+        <div class="books">温暖的动物故事，训练细读与情感分析能力，为考试作文打下深厚根基。</div>
+        <div class="bonus">🎁 附赠阅读理解线上平台 3 个月</div>
+      </div>
+    </div>
+    <div class="reading-price-badge">
+      <div class="price">故事包包 RM 100</div>
+      <p>含正版书籍 + 线上平台三个月，一次性费用</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ MID CTA ══════════════ -->
+<section id="mid-cta">
+  <div class="container">
+    <h2>心动了？来问问有没有名额！</h2>
+    <p>每班名额有限，以注册先后为序。WhatsApp 告诉我们孩子的年级，我们帮您安排最合适的班级。</p>
+    <a href="https://wa.me/60167528359?text=您好，我想为孩子查询中学组补习名额" class="wa-btn">
+      <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.532 5.854L.054 23.5l5.82-1.527A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.816 9.816 0 01-5.003-1.368l-.359-.213-3.724.977.994-3.63-.234-.373A9.813 9.813 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182c5.43 0 9.818 4.388 9.818 9.818 0 5.43-4.388 9.818-9.818 9.818z"/></svg>
+      WhatsApp 查询名额
+    </a>
+  </div>
+</section>
+
+<!-- ══════════════ FAQ ══════════════ -->
+<section id="faq" class="section">
+  <div class="container">
+    <div class="text-center">
+      <span class="badge">常见问题</span>
+      <h2 class="section-title">家长常问的问题</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          <span>我的孩子在国中（SMK），可以来上课吗？</span>
+          <span class="arrow">+</span>
+        </button>
+        <div class="faq-a">完全可以！弘文馆金山园分院同时服务宽中生和国中/独中生。数学、英文、国文各科课程适合不同学校的中学生，欢迎告诉我们孩子就读的学校和年级，我们会建议最合适的班级。</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          <span>数学分 A 组和 B 组，有什么分别？</span>
+          <span class="arrow">+</span>
+        </button>
+        <div class="faq-a">分组是为了让每个孩子都能在最合适的节奏学习。A 组和 B 组由不同老师负责，班次时间不同，家长可根据时间配合选择。具体分组安排欢迎 WhatsApp 询问。</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          <span>华文阅读课有线上和实体两种，哪个更适合我的孩子？</span>
+          <span class="arrow">+</span>
+        </button>
+        <div class="faq-a">中一目前华文阅读以线上课进行（周四晚），方便接送安排；中二华文阅读则为实体课（周五晚）。中三也是线上课（周四晚）。线上课同样互动性强，老师会透过视频引导讨论和阅读分析。</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          <span>故事包包一定要买吗？</span>
+          <span class="arrow">+</span>
+        </button>
+        <div class="faq-a">故事包包是华文阅读课的核心教材，内含精选小说和阅读理解练习，并附赠三个月线上阅读平台。建议配合课程一并购入，效果最好。价格为 RM 100（一次性）。</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          <span>什么时候开课？现在报名还来得及吗？</span>
+          <span class="arrow">+</span>
+        </button>
+        <div class="faq-a">课程随学期滚动进行，只要还有名额，随时可以插班。但各班名额有限，越早确认越好。请 WhatsApp 我们查询目前的名额状况。</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          <span>弘文馆跟一般补习中心有什么不一样？</span>
+          <span class="arrow">+</span>
+        </button>
+        <div class="faq-a">弘文馆坚持"专科专教"，每位老师只负责自己专精的科目。华文老师来自台湾名校，数学老师背景横跨工程与教育，国文老师曾是宽中导师。我们不是一个全科老师教七八科的地方——这里每一科都有真正专业的人在负责。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ FINAL CTA ══════════════ -->
+<section id="final-cta">
+  <div class="container">
+    <div class="urgency-note">📋 名额有限，先到先得</div>
+    <h2>下一步，很简单</h2>
+    <p>告诉我们孩子的年级和想补的科目，我们帮您安排试听或咨询。不用担心，先问问不用立刻决定。</p>
+
+    <div style="margin-bottom:32px;">
+      <a href="https://wa.me/60167528359?text=您好，我想了解弘文馆金山园中学组课程，孩子就读" class="wa-btn" style="font-size:18px;padding:16px 36px;">
+        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.532 5.854L.054 23.5l5.82-1.527A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.816 9.816 0 01-5.003-1.368l-.359-.213-3.724.977.994-3.63-.234-.373A9.813 9.813 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182c5.43 0 9.818 4.388 9.818 9.818 0 5.43-4.388 9.818-9.818 9.818z"/></svg>
+        立即 WhatsApp — 016-752 8359
+      </a>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-item">
+        <div class="icon">📍</div>
+        <div class="info">
+          <strong>地址</strong>
+          37-01, Jln Anggerik Emas 1,<br/>Taman Anggerik,<br/>81200 Johor Bahru, Johor
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="icon">📱</div>
+        <div class="info">
+          <strong>WhatsApp</strong>
+          <a href="https://wa.me/60167528359" style="color:#FFD580;font-weight:700;">016-752 8359</a><br/>
+          <span style="font-size:12px;opacity:.7;">欢迎随时发讯息询问</span>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="icon">🕐</div>
+        <div class="info">
+          <strong>上课时段</strong>
+          周四 · 周五 · 周六 · 周日<br/>
+          <span style="font-size:12px;opacity:.7;">各班时间见上方时间表</span>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="icon">🌐</div>
+        <div class="info">
+          <strong>官方网站</strong>
+          <a href="https://hongwenguan.vercel.app" style="color:#FFD580;">hongwenguan.vercel.app</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 弘文馆教育中心 · 金山园分院 Hong Wen Guan Learning Centre Impian Emas</p>
+  <p style="margin-top:6px;">专科专教 · 因材施教 · 陪伴成长</p>
+</footer>
+
+<!-- Sticky WhatsApp -->
+<div class="sticky-wa">
+  <a href="https://wa.me/60167528359?text=您好，我想了解中学组课程" title="WhatsApp 我们">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.532 5.854L.054 23.5l5.82-1.527A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.816 9.816 0 01-5.003-1.368l-.359-.213-3.724.977.994-3.63-.234-.373A9.813 9.813 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182c5.43 0 9.818 4.388 9.818 9.818 0 5.43-4.388 9.818-9.818 9.818z"/></svg>
+  </a>
+</div>
+
+<script>
+  // Tab switching
+  function showTab(id) {
+    document.querySelectorAll('.course-panel').forEach(p => p.classList.remove('active'));
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+    event.target.classList.add('active');
+  }
+
+  // FAQ accordion
+  function toggleFaq(btn) {
+    const item = btn.closest('.faq-item');
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  }
+</script>
+
+</body>
+</html>
