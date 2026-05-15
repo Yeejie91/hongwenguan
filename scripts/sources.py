@@ -60,3 +60,17 @@ REGION_GROUPS = {
     "日韩": ["Japan", "Korea"],
     "全球": ["Global"],
 }
+
+# Drop an item if any of these substrings appears in its title or summary
+# (case-insensitive). Used to filter out job ads, promotional posts, etc.
+EXCLUDE_KEYWORDS = [
+    # 中文 - 招聘 / 广告 / 抽奖
+    "求職", "求职", "招聘", "招聘公告", "招聘启事",
+    "招生广告", "招生廣告",
+    "抽奖", "抽獎", "转发抽", "轉發抽", "福袋",
+    # 英文 - hiring / job ads
+    "now hiring", "we're hiring", "job vacancy", "vacancy:",
+    "recruitment fair", "career fair",
+    # 显式广告
+    "sponsored", "advertorial", "promoted post",
+]

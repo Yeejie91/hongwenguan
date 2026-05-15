@@ -16,7 +16,7 @@ from urllib.parse import urlparse
 
 import feedparser
 
-from sources import REGION_GROUPS, SOURCES
+from sources import EXCLUDE_KEYWORDS, REGION_GROUPS, SOURCES
 
 MAX_ITEMS_PER_SOURCE = 6
 MAX_AGE_DAYS = 7
@@ -89,24 +89,41 @@ def fetch_all() -> list[dict]:
     return out
 
 
+def is_excluded(item: dict) -> bool:
+    haystack = f"{item['title']} {item['summary']}".lower()
+    return any(kw.lower() in haystack for kw in EXCLUDE_KEYWORDS)
+
+
 def filter_and_dedupe(items: list[dict]) -> list[dict]:
     now = datetime.now(timezone.utc)
     seen_links: set[str] = set()
     seen_titles: set[str] = set()
     out: list[dict] = []
+    dropped_kw = 0
+    dropped_age = 0
+    dropped_dup = 0
     for item in items:
+        if is_excluded(item):
+            dropped_kw += 1
+            continue
         u = urlparse(item["link"])
         link_key = (u.netloc + u.path).lower()
         title_key = re.sub(r"\s+", "", item["title"])[:40]
         if link_key in seen_links or title_key in seen_titles:
+            dropped_dup += 1
             continue
         if item["published"]:
             age_days = (now - item["published"]).total_seconds() / 86400
             if age_days > MAX_AGE_DAYS:
+                dropped_age += 1
                 continue
         seen_links.add(link_key)
         seen_titles.add(title_key)
         out.append(item)
+    print(
+        f"  dropped: keyword={dropped_kw} dup={dropped_dup} age={dropped_age}",
+        flush=True,
+    )
     return out
 
 

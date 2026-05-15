@@ -41,6 +41,9 @@
     .nav-right { display:flex; align-items:center; gap:12px; }
     .nav-wa { background:var(--red); color:white; border:none; border-radius:8px; padding:10px 20px; font-size:15px; font-weight:700; cursor:pointer; box-shadow:0 4px 14px rgba(200,16,46,.3); transition:all .2s; text-decoration:none; display:inline-block; font-family:'Noto Sans SC',sans-serif; }
     .nav-wa:hover { background:var(--red-d); transform:translateY(-1px); }
+    .nav-news { background:transparent; color:var(--brown); border:1.5px solid var(--border); border-radius:8px; padding:8.5px 16px; font-size:14px; font-weight:800; cursor:pointer; transition:all .2s; text-decoration:none; display:inline-block; font-family:'Noto Sans SC',sans-serif; letter-spacing:.3px; }
+    .nav-news:hover { background:var(--red-lt); border-color:var(--red); color:var(--red); }
+    @media (max-width:640px) { .nav-news { display:none; } }
 
     /* HERO */
     .hero { min-height:100vh; position:relative; display:flex; align-items:flex-end; overflow:hidden; }
@@ -304,6 +307,7 @@
   </div>
   <div class="nav-right">
     <button class="lang-btn" id="lang-btn" onclick="toggleLang()">EN</button>
+    <a href="news.html" class="nav-news" data-i18n="nav-news">教育资讯</a>
     <a href="https://wa.me/60166760079" class="nav-wa" target="_blank" data-i18n="nav-wa">WhatsApp 咨询</a>
   </div>
 </nav>
@@ -839,6 +843,7 @@
   const T = {
     zh: {
       'nav-name': '弘文馆教育中心<small>Scholar\'s Hall · Setia Indah</small>',
+      'nav-news': '教育资讯',
       'nav-wa': 'WhatsApp 咨询',
       'hero-h1': '让学习与成长，<br>悄悄<em>盛开</em>在孩子心田',
       'hero-p': '把成长的每一天，都托付给温柔的守护。弘文馆安亲班——专业师资、温暖关怀，让孩子在安全环境中快乐成长、全面发展。',
@@ -944,6 +949,7 @@
     },
     en: {
       'nav-name': 'Scholar\'s Hall<small>Where Learning Blossoms</small>',
+      'nav-news': 'Daily News',
       'nav-wa': 'WhatsApp Enquiry',
       'hero-h1': 'Let Learning & Growth,<br>Quietly <em>Blossom</em> in Every Child',
       'hero-p': 'Entrust every precious day of growth to our warm and caring hands. Scholar\'s Hall — professional teachers, nurturing environment, helping children grow happily and develop holistically.',
